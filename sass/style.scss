@@ -1,3 +1,7 @@
 @use 'Reset';
 @use 'Navbar';
 @use 'Variables';
+
+.cont{
+    padding: Variables.$padding1;
+}

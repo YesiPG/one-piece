@@ -12,4 +12,31 @@ html {
   scroll-behavior: smooth;
 }
 
+.contH {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+.contH-logo {
+  max-width: 100%;
+  width: 13rem;
+  height: 9rem;
+  object-fit: cover;
+}
+.contH-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contH-nav-link {
+  margin: 0 1.5rem;
+  font-size: 2.3rem;
+  color: #fff;
+}
+.cont {
+  padding: 0 15rem;
+}
+
 /*# sourceMappingURL=style.css.map */

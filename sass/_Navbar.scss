@@ -1,0 +1,29 @@
+@use "Variables";
+@use "Mixin";
+
+.contH{
+    background-color: Variables.$color-negro;
+    @include Mixin.crear-flex(space-between,center);
+    padding: 0 ;
+
+    &-logo{
+        max-width: 100%;
+        width: 13rem;
+        height: 9rem;
+        object-fit: cover;
+    }
+
+    &-nav{
+        @include Mixin.crear-flex(space-around,center);
+        &-link{
+            margin: 0 1.5rem;
+            font-size: Variables.$font-size13;
+            color: Variables.$color-blanco;
+
+            &:hover{
+                
+            }
+        }
+    }
+}
+
