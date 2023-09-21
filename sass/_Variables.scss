@@ -1,20 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,100;8..144,200;8..144,300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+// Fonts
+
+$font1: "Poppins", sans-serif;
+$font2: "Roboto Serif", serif;
+
 // padding y margin
 
-$padding1: 0 15rem; 
-$padding2: 0 13rem; 
-$padding3: 0 10rem; 
-$padding4: 0 8rem; 
-$padding5: 0 6rem; 
-$padding6: 0 4rem; 
-$padding7: 0 2rem; 
-
+$padding1: 0 14rem;
+$padding2: 0 12rem;
+$padding3: 0 10rem;
+$padding4: 0 8rem;
+$padding5: 0 6rem;
+$padding6: 0 4rem;
+$padding7: 0 2rem;
 
 // Colores de la pagina
 
+$color-negro-opacity: rgba(#000, 0.6);
+$color-rojo-opacity: rgba(#bd0003, 0.6);
 $color-negro: #000;
 $color-blanco: #fff;
-$color-negro-opacity: rgba(#000,.6);
-$color-rojo: #ff0000 ;
+$color-rojo: #ff0000;
 $color-rojo-oscuro: #bd0003;
 $color-verde: #009929;
 $color-verde-oscuro: #006414;
@@ -52,6 +61,5 @@ $font-size12: 2.5rem;
 $font-size13: 2.3rem;
 $font-size14: 2rem;
 $font-size15: 1.8rem;
-$font-size15: 1.5rem;
-$font-size15: 1.3rem;
-
+$font-size16: 1.5rem;
+$font-size17: 1.3rem;

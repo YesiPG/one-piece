@@ -2,28 +2,81 @@
 @use "Mixin";
 
 .contH{
+    position: fixed;
+    width: 100%;
     background-color: Variables.$color-negro;
     @include Mixin.crear-flex(space-between,center);
-    padding: 0 ;
+    padding: Variables.$padding1;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
 
     &-logo{
         max-width: 100%;
         width: 13rem;
-        height: 9rem;
+        height: 4.5rem;
         object-fit: cover;
     }
 
     &-nav{
+        position: relative;
         @include Mixin.crear-flex(space-around,center);
+
+        &-close{
+            cursor: pointer;
+            position: absolute;
+            top: 4rem;
+            right: 4rem;
+            background-color: Variables.$color-negro;
+            opacity: 0;
+            pointer-events: none;
+            border-radius: 50%;
+            transition: background-color .2s ease;
+
+            &-show{
+                opacity: 1;
+                pointer-events: unset;
+            }
+
+            &:hover{
+                background-color: Variables.$color-rojo-opacity;
+            }
+
+            &-img{
+                width: 3.5rem;
+                pointer-events: none;
+            }
+        }
         &-link{
             margin: 0 1.5rem;
-            font-size: Variables.$font-size13;
+            font-family: Variables.$font2;
+            font-size: Variables.$font-size15;
             color: Variables.$color-blanco;
 
             &:hover{
-                
+                color: Variables.$color-rojo-oscuro;
             }
         }
+    }
+
+    &-menu{
+        cursor: pointer;
+        position: absolute;
+        right: 15rem;
+        background-color: Variables.$color-negro;
+        opacity: 0;
+        pointer-events: none;
+        transform: rotate(0);
+        transition: transform .2s ease;
+
+        &:hover{
+            transform: rotate(180deg);
+        }
+        
+        &-img{
+            width: 3rem;
+            pointer-events: none;
+        }
+
     }
 }
 

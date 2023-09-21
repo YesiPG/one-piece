@@ -1,0 +1,20 @@
+@use "Variables";
+@use "Mixin";
+
+.hero{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    &::before{
+        content: "";
+        background-image: url("https://www.mundodeportivo.com/alfabeta/hero/2021/04/La-historia-de-One-Piece-de-que-va-este-anime.jpg?width=1200");
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        max-width: 50%;
+        display: block;
+        position: absolute;
+        top: 1em;
+        left: 50%;
+    }
+}

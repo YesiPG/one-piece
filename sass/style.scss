@@ -1,7 +1,92 @@
-@use 'Reset';
-@use 'Navbar';
-@use 'Variables';
+@use "Reset";
+@use "Navbar";
+@use "Variables";
 
-.cont{
-    padding: Variables.$padding1;
+// MediaQuerys
+
+.contH {
+  @media (max-width: 834px) {
+    padding: Variables.$padding2;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+
+    &-menu {
+      right: 12rem;
+      opacity: 1;
+      pointer-events: unset;
+
+      &-show{
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
+
+    &-nav {
+      position: fixed;
+      width: 50%;
+      top: 0;
+      right: -100rem;
+      bottom: 0;
+      background-color: Variables.$color-negro;
+      justify-content: center;
+      flex-direction: column;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease, right 1s ease;
+
+      &-show {
+        right: 0;
+        opacity: 1;
+        pointer-events: unset;
+      }
+
+      &-link {
+        margin: 1.5rem 0;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: Variables.$padding3;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    &-menu {
+      right: 10rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    padding: Variables.$padding5;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+
+    &-menu {
+      right: 6rem;
+    }
+  }
+  @media (max-width: 480px) {
+    padding: Variables.$padding6;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+
+    &-menu {
+      right: 4rem;
+    }
+
+    &-nav{
+        width: 60%;
+    }
+  }
+  @media (max-width: 320px) {
+    padding: Variables.$padding7;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+
+    &-menu {
+      right: 2rem;
+    }
+    &-nav{
+        width: 100%;
+    }
+  }
 }
