@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,100;8..144,200;8..144,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
-*, *::after, *::before {
+* {
   box-sizing: border-box;
   border: none;
   outline: none;
@@ -24,6 +24,7 @@ html {
   padding: 0 14rem;
   padding-top: 1rem;
   padding-bottom: 0.5rem;
+  z-index: 80;
 }
 .contH-logo {
   max-width: 100%;
@@ -84,6 +85,98 @@ html {
 .contH-menu-img {
   width: 3rem;
   pointer-events: none;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 800px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.hero-text {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem 8rem;
+  color: #fff;
+}
+.hero-text-title {
+  text-align: center;
+  font-size: 3.8rem;
+  margin-bottom: 2rem;
+}
+.hero-text-parag {
+  font-size: 1.8rem;
+}
+
+.present-cont1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 14rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+.present-cont1-button, .present-cont1-button2, .present-cont1-button3 {
+  width: 5rem;
+  height: 5rem;
+  position: relative;
+  padding: 12rem;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.present-cont1-button::before, .present-cont1-button2::before, .present-cont1-button3::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../images/manga.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(50%);
+  border-radius: 50%;
+  box-shadow: 4px 8px 10px #000;
+  z-index: -1;
+}
+.present-cont1-button-link, .present-cont1-button2-link, .present-cont1-button3-link {
+  padding: 1rem;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.present-cont1-button2::before {
+  background-image: url("../images/anime.jpg");
+}
+.present-cont1-button3::before {
+  background-image: url("../images/liveAction.jpg");
+}
+.present-cont2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  background-color: #000;
+  padding: 0 14rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.present-cont2-parag {
+  color: #fff;
+  font-size: 2rem;
 }
 
 @media (max-width: 834px) {
@@ -167,6 +260,33 @@ html {
   }
   .contH-nav {
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text-title {
+    font-size: 3.3rem;
+  }
+}
+@media (max-width: 576px) {
+  .hero-text {
+    padding: 4rem;
+  }
+  .hero-text-title {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 480px) {
+  .hero-text {
+    padding: 2rem;
+  }
+  .hero-text-title {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 320px) {
+  .hero-text-title {
+    font-size: 2.5rem;
   }
 }
 

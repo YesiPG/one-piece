@@ -1,5 +1,7 @@
 @use "Reset";
 @use "Navbar";
+@use "Hero";
+@use "Present";
 @use "Variables";
 
 // MediaQuerys
@@ -87,6 +89,39 @@
     }
     &-nav{
         width: 100%;
+    }
+  }
+}
+
+.hero{
+  @media (max-width: 768px){
+    &-text{
+      &-title{
+        font-size: Variables.$font-size9;
+      }
+    }
+  }
+  @media (max-width: 576px){
+    &-text{
+      padding: 4rem;
+      &-title{
+        font-size: Variables.$font-size10;
+      }
+    }
+  }
+  @media (max-width: 480px){
+    &-text{
+      padding: 2rem;
+      &-title{
+        font-size: Variables.$font-size12;
+      }
+    }
+  }
+  @media (max-width: 320px){
+    &-text{
+      &-title{
+        font-size: Variables.$font-size12;
+      }
     }
   }
 }
