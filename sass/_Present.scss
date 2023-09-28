@@ -4,6 +4,7 @@
 .present {
   &-cont1 {
     @include Mixin.crear-flex(space-between, center);
+    flex-wrap: wrap;
     padding: Variables.$padding1;
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -53,16 +54,34 @@
     }
   }
 
-  &-cont2 {
+  &-cont2, &-cont3 {
     @include Mixin.crear-grid(50% 50%, 1fr);
     background-color: Variables.$color-negro;
     padding: Variables.$padding1;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+   padding-top: 4rem;
+    padding-bottom: 15rem;
+    margin-bottom: 10rem; 
 
     &-parag{
         color: Variables.$color-blanco;
         font-size: Variables.$font-size14;
+    }
+
+    &-images{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-img{
+        position: absolute;
+        top: 0;
+        max-width: 100%;
+        width: 30rem;
+        height: 30rem;
+        object-fit: cover;
+        box-shadow: 4px 8px 10px Variables.$color-negro;
+      }
     }
   }
 }
