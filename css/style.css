@@ -66,6 +66,8 @@ html {
   font-family: "Roboto Serif", serif;
   font-size: 1.8rem;
   color: #fff;
+  background-color: #000;
+  cursor: pointer;
 }
 .contH-nav-link:hover {
   color: #bd0003;
@@ -86,6 +88,39 @@ html {
 .contH-menu-img {
   width: 3rem;
   pointer-events: none;
+}
+.contH-tripulacion {
+  position: absolute;
+  top: 6rem;
+  right: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000;
+  padding: 2rem 4rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+.contH-tripulacion-show {
+  opacity: 1;
+  pointer-events: unset;
+}
+.contH-tripulacion-close {
+  cursor: pointer;
+  margin-bottom: 1rem;
+  width: 3rem;
+}
+.contH-tripulacion-link {
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: "Roboto Serif", serif;
+  margin: 0.3rem;
+  transition: color 0.2s ease;
+}
+.contH-tripulacion-link:hover {
+  color: #ff0000;
 }
 
 .hero {
@@ -311,6 +346,10 @@ html {
   .contH-nav-link {
     margin: 1.5rem 0;
   }
+  .contH-tripulacion {
+    top: 0;
+    right: 0;
+  }
   .present-cont1 {
     padding: 0 12rem;
     padding-top: 8rem;
@@ -418,7 +457,7 @@ html {
     right: 4rem;
   }
   .contH-nav {
-    width: 60%;
+    width: 100%;
   }
   .hero-text {
     padding: 2rem;
@@ -449,9 +488,6 @@ html {
   }
   .contH-menu {
     right: 2rem;
-  }
-  .contH-nav {
-    width: 100%;
   }
   .hero-text-title {
     font-size: 2.5rem;
