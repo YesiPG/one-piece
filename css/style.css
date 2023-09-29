@@ -97,8 +97,9 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
   background-color: #000;
-  padding: 2rem 4rem;
+  width: 25%;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease;
@@ -116,7 +117,7 @@ html {
   color: #fff;
   font-size: 1.8rem;
   font-family: "Roboto Serif", serif;
-  margin: 0.3rem;
+  margin: 1rem;
   transition: color 0.2s ease;
 }
 .contH-tripulacion-link:hover {

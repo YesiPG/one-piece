@@ -88,8 +88,9 @@
         right: 18%;
         @include Mixin.crear-flex(center,center);
         flex-direction: column;
+        flex-wrap: wrap;
         background-color: Variables.$color-negro;
-        padding: 2rem 4rem;
+        width: 25%;
         opacity: 0;
         pointer-events: none;
         transition: opacity .2s ease;
@@ -109,7 +110,7 @@
             color: Variables.$color-blanco;
             font-size: Variables.$font-size15;
             font-family: Variables.$font2;
-            margin: .3rem;
+            margin: 1rem;
             transition: color .2s ease;
 
             &:hover{
