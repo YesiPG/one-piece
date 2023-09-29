@@ -2,5 +2,62 @@
 @use "Mixin";
 
 .capitanes{
+    padding: Variables.$padding1;
+    padding-top: 8rem;
 
+    &-title{
+        text-align: center;
+        font-size: Variables.$font-size10;
+        font-family: Variables.$font1;
+    }
+
+    &-cont{
+        @include Mixin.crear-flex(space-around,center);
+        flex-wrap: wrap;
+        padding-top: 6rem;
+
+        &-tarjeta{
+            cursor: pointer;
+            width: 25rem;
+            height: 40rem;
+            margin: 2rem;
+            text-align: center;
+            padding: 2rem;
+            background-color: Variables.$color-cartel-busqueda;
+            border-radius: .6rem;
+            box-shadow: 4px 8px 10px Variables.$color-negro;
+            transition: box-shadow .5s ease;
+
+            &:hover{
+            box-shadow: 4px 8px 10px Variables.$color-rojo;
+
+            }
+
+            &-img{
+                max-width: 100%;
+                width: 20rem;
+                height: 20rem;
+                object-fit: cover;
+            }
+
+            &-text1, &-text2, &-text3, &-precio{
+                font-family: Variables.$font2;
+                margin-bottom: 1rem;
+                font-size: Variables.$font-size12;
+                color: Variables.$color-negro;
+            }
+
+            &-text2{
+                font-size: Variables.$font-size16;
+            }
+            &-text3{
+                font-size: Variables.$font-size13;
+            }
+            &-precio{
+                font-size: Variables.$font-size14;
+                margin: 0;
+            }
+        }
+    }
+    
 }

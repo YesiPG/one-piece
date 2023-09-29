@@ -3,6 +3,7 @@
 @use "Hero";
 @use "Present";
 @use "Capitanes";
+@use "Footer";
 @use "Variables";
 
 // MediaQuerys
@@ -48,7 +49,7 @@
       }
     }
   }
-  .present{
+  .present {
     &-cont1 {
       padding: Variables.$padding2;
       padding-top: 8rem;
@@ -65,6 +66,16 @@
         &-img {
           width: 22.5rem;
         }
+      }
+    }
+  }
+  .capitanes {
+    padding: Variables.$padding2;
+    padding-top: 8rem;
+
+    &-cont {
+      &-tarjeta {
+        width: 23rem;
       }
     }
   }
@@ -86,7 +97,7 @@
       }
     }
   }
-  .present{
+  .present {
     &-cont1 {
       padding: Variables.$padding3;
       padding-top: 8rem;
@@ -105,6 +116,10 @@
         }
       }
     }
+  }
+  .capitanes {
+    padding: Variables.$padding3;
+    padding-top: 8rem;
   }
 }
 
@@ -126,7 +141,7 @@
       }
     }
   }
-  .present{
+  .present {
     &-cont1 {
       padding: Variables.$padding5;
       padding-top: 8rem;
@@ -158,6 +173,14 @@
       }
     }
   }
+  .capitanes {
+    padding: Variables.$padding5;
+    padding-top: 8rem;
+
+    &-title{
+      font-size: Variables.$font-size11;
+    }
+  }
 }
 
 @media (max-width: 480px) {
@@ -182,7 +205,7 @@
       }
     }
   }
-  .present{
+  .present {
     &-cont1 {
       padding: Variables.$padding6;
       padding-top: 8rem;
@@ -194,6 +217,10 @@
       padding-top: 4rem;
       padding-bottom: 25rem;
     }
+  }
+  .capitanes {
+    padding: Variables.$padding6;
+    padding-top: 8rem;
   }
 }
 @media (max-width: 320px) {
@@ -216,7 +243,7 @@
       }
     }
   }
-  .present{
+  .present {
     &-cont1 {
       padding: Variables.$padding7;
       padding-top: 8rem;
@@ -236,6 +263,8 @@
       }
     }
   }
+  .capitanes {
+    padding: Variables.$padding7;
+    padding-top: 8rem;
+  }
 }
-
-

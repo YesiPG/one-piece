@@ -196,6 +196,85 @@ html {
   box-shadow: 4px 8px 10px #000;
 }
 
+.capitanes {
+  padding: 0 14rem;
+  padding-top: 8rem;
+}
+.capitanes-title {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+}
+.capitanes-cont {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 6rem;
+}
+.capitanes-cont-tarjeta {
+  cursor: pointer;
+  width: 25rem;
+  height: 40rem;
+  margin: 2rem;
+  text-align: center;
+  padding: 2rem;
+  background-color: #e0d8b0;
+  border-radius: 0.6rem;
+  box-shadow: 4px 8px 10px #000;
+  transition: box-shadow 0.5s ease;
+}
+.capitanes-cont-tarjeta:hover {
+  box-shadow: 4px 8px 10px #ff0000;
+}
+.capitanes-cont-tarjeta-img {
+  max-width: 100%;
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+}
+.capitanes-cont-tarjeta-text1, .capitanes-cont-tarjeta-text2, .capitanes-cont-tarjeta-text3, .capitanes-cont-tarjeta-precio {
+  font-family: "Roboto Serif", serif;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: #000;
+}
+.capitanes-cont-tarjeta-text2 {
+  font-size: 1.5rem;
+}
+.capitanes-cont-tarjeta-text3 {
+  font-size: 2.3rem;
+}
+.capitanes-cont-tarjeta-precio {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.footer {
+  background-color: #000;
+  margin-top: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+.footer-logo {
+  max-width: 100%;
+  width: 30rem;
+  height: 28rem;
+}
+.footer-link {
+  font-size: 1.8rem;
+  color: #fff;
+}
+.footer-link-a {
+  margin-bottom: 1rem;
+}
+.footer-link-a > a {
+  color: #fff;
+}
+
 @media (max-width: 834px) {
   .contH {
     padding: 0 12rem;
@@ -246,6 +325,13 @@ html {
   .present-cont2-images-img, .present-cont3-images-img {
     width: 22.5rem;
   }
+  .capitanes {
+    padding: 0 12rem;
+    padding-top: 8rem;
+  }
+  .capitanes-cont-tarjeta {
+    width: 23rem;
+  }
 }
 @media (max-width: 768px) {
   .contH {
@@ -272,6 +358,10 @@ html {
   }
   .present-cont2-images-img, .present-cont3-images-img {
     width: 22.5rem;
+  }
+  .capitanes {
+    padding: 0 10rem;
+    padding-top: 8rem;
   }
 }
 @media (max-width: 576px) {
@@ -310,6 +400,13 @@ html {
   .present-cont3-images-img {
     top: 14rem;
   }
+  .capitanes {
+    padding: 0 6rem;
+    padding-top: 8rem;
+  }
+  .capitanes-title {
+    font-size: 2.8rem;
+  }
 }
 @media (max-width: 480px) {
   .contH {
@@ -339,6 +436,10 @@ html {
     padding-top: 4rem;
     padding-bottom: 25rem;
   }
+  .capitanes {
+    padding: 0 4rem;
+    padding-top: 8rem;
+  }
 }
 @media (max-width: 320px) {
   .contH {
@@ -367,6 +468,10 @@ html {
   }
   .present-cont3-images-img {
     top: 20rem;
+  }
+  .capitanes {
+    padding: 0 2rem;
+    padding-top: 8rem;
   }
 }
 
