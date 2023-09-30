@@ -16,7 +16,8 @@
   max-width: 100%;
   width: 13rem;
   height: 4.5rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .contH-nav {
   position: relative;
@@ -220,7 +221,8 @@
   max-width: 100%;
   width: 30rem;
   height: 30rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   box-shadow: 4px 8px 10px #000;
 }
 
@@ -259,7 +261,8 @@
   max-width: 100%;
   width: 20rem;
   height: 20rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .capitanes-cont-tarjeta-text1, .capitanes-cont-tarjeta-text2, .capitanes-cont-tarjeta-text3, .capitanes-cont-tarjeta-precio {
   font-family: "Roboto Serif", serif;
@@ -312,7 +315,8 @@
   max-width: 100%;
   width: 35rem;
   height: 30rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .sagaL-text1-parr {
   font-family: "Roboto Serif", serif;
@@ -329,17 +333,6 @@
   padding-bottom: 4rem;
   border-bottom: 1px solid #000;
   margin-left: 2rem;
-}
-
-.autor {
-  padding: 0 14rem;
-  padding-top: 15rem;
-}
-.autor-title {
-  font-family: "Poppins", sans-serif;
-  font-size: 3.3rem;
-  margin-bottom: 4rem;
-  text-align: center;
 }
 
 .footer {
@@ -636,6 +629,4 @@ html {
   .sagaL {
     padding: 0 2rem;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

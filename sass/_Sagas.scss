@@ -1,0 +1,60 @@
+@use "Variables";
+@use "Mixin";
+
+.sagaI{
+    padding: Variables.$padding1;
+    padding-top: 15rem;
+
+    
+    &-title{
+        font-family: Variables.$font1;
+        font-size: Variables.$font-size9;
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+    
+    &-parr{
+        font-family: Variables.$font2;
+        font-size: Variables.$font-size14;
+        
+        border-bottom: 1px solid Variables.$color-negro;
+        padding-bottom: 4rem;
+    }
+}
+
+.sagaL{
+    padding: Variables.$padding1;
+    
+    &-title{
+        margin: 4rem 0;
+        font-size: Variables.$font-size11;
+    }
+
+    &-text1{
+        @include Mixin.crear-grid(40% 60%, 1fr);
+        margin-bottom: 2rem;
+        &-img{
+            max-width: 100%;
+            width: 35rem;
+            height: 30rem;
+            object-fit: cover;
+        }
+        &-parr{
+            font-family: Variables.$font2;
+            font-size: Variables.$font-size14;
+        }
+    }
+    &-parr{
+        font-family: Variables.$font2;
+        font-size: Variables.$font-size14;
+        margin-bottom: 2rem;
+    }
+
+    &-list{
+        font-family: Variables.$font2;
+        font-size: Variables.$font-size14;
+        padding-bottom: 4rem;
+        border-bottom: 1px solid Variables.$color-negro;
+        margin-left: 2rem;
+    }
+}

@@ -1,12 +1,38 @@
-@use "Reset";
-@use "Navbar";
-@use "Hero";
-@use "Present";
-@use "Capitanes";
-@use "Footer";
 @use "Variables";
+@use "Mixin";
+
+@use "Navbar";
+@use "Inicio";
+@use "Sagas";
+@use "Autor";
+@use "Footer";
+
+*{
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 10px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 
 // MediaQuerys
+
+@media (max-width: 1024px) {
+  .contH {
+    &-tripulacion {
+      top: 6rem;
+      right: 25%;
+      width: 30%;
+    }
+  }
+}
 
 @media (max-width: 834px) {
   .contH {
@@ -47,9 +73,10 @@
         margin: 1.5rem 0;
       }
     }
-    &-tripulacion{
+    &-tripulacion {
       top: 0;
       right: 0;
+      width: 50%;
     }
   }
   .present {
@@ -79,6 +106,21 @@
     &-cont {
       &-tarjeta {
         width: 23rem;
+      }
+    }
+  }
+  .sagaI {
+    padding: Variables.$padding2;
+    padding-top: 15rem;
+  }
+  .sagaL {
+    padding: Variables.$padding2;
+    &-text1 {
+      @include Mixin.crear-grid(1fr, 40% 60%);
+
+      &-img {
+        margin: auto;
+        margin-bottom: 2rem;
       }
     }
   }
@@ -123,6 +165,14 @@
   .capitanes {
     padding: Variables.$padding3;
     padding-top: 8rem;
+  }
+
+  .sagaI {
+    padding: Variables.$padding3;
+    padding-top: 15rem;
+  }
+  .sagaL {
+    padding: Variables.$padding3;
   }
 }
 
@@ -180,9 +230,17 @@
     padding: Variables.$padding5;
     padding-top: 8rem;
 
-    &-title{
+    &-title {
       font-size: Variables.$font-size11;
     }
+  }
+
+  .sagaI {
+    padding: Variables.$padding5;
+    padding-top: 15rem;
+  }
+  .sagaL {
+    padding: Variables.$padding5;
   }
 }
 
@@ -197,6 +255,10 @@
     }
 
     &-nav {
+      width: 100%;
+    }
+
+    &-tripulacion {
       width: 100%;
     }
   }
@@ -224,6 +286,13 @@
   .capitanes {
     padding: Variables.$padding6;
     padding-top: 8rem;
+  }
+  .sagaI {
+    padding: Variables.$padding6;
+    padding-top: 15rem;
+  }
+  .sagaL {
+    padding: Variables.$padding6;
   }
 }
 @media (max-width: 320px) {
@@ -266,5 +335,12 @@
   .capitanes {
     padding: Variables.$padding7;
     padding-top: 8rem;
+  }
+  .sagaI {
+    padding: Variables.$padding7;
+    padding-top: 15rem;
+  }
+  .sagaL {
+    padding: Variables.$padding7;
   }
 }

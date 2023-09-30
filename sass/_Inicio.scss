@@ -1,0 +1,183 @@
+@use "Variables";
+@use "Mixin";
+
+.hero {
+    @include Mixin.crear-flex(center, center);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../images/hero.jpg");
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  
+    &-text {
+      background-color: Variables.$color-negro-opacity;
+      padding: 2rem 8rem;
+      color: Variables.$color-blanco;
+  
+      &-title {
+        text-align: center;
+        font-size: Variables.$font-size7;
+        margin-bottom: 2rem;
+      }
+  
+      &-parag {
+        font-size: Variables.$font-size15;
+      }
+    }
+}
+
+.present {
+    &-cont1 {
+      @include Mixin.crear-flex(space-between, center);
+      flex-wrap: wrap;
+      padding: Variables.$padding1;
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+  
+      &-button,
+      &-button2,
+      &-button3 {
+        width: 5rem;
+        height: 5rem;
+        position: relative;
+        padding: 12rem;
+        margin: 2rem;
+        @include Mixin.crear-flex(center, center);
+  
+        &::before {
+          content: "";
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          background-image: url("../images/manga.webp");
+          background-size: cover;
+          background-repeat: no-repeat;
+          filter: grayscale(50%);
+          border-radius: 50%;
+          box-shadow: 4px 8px 10px Variables.$color-negro;
+          z-index: -1;
+        }
+  
+        &-link {
+          padding: 1rem;
+          color: Variables.$color-blanco;
+          font-size: Variables.$font-size14;
+          text-align: center;
+          background-color: Variables.$color-negro-opacity;
+        }
+      }
+  
+      &-button2 {
+        &::before {
+          background-image: url("../images/anime.jpg");
+        }
+      }
+      &-button3 {
+        &::before {
+          background-image: url("../images/liveAction.jpg");
+        }
+      }
+    }
+  
+    &-cont2, &-cont3 {
+      @include Mixin.crear-grid(50% 50%, 1fr);
+      background-color: Variables.$color-negro;
+      padding: Variables.$padding1;
+     padding-top: 4rem;
+      padding-bottom: 15rem;
+      margin-bottom: 10rem; 
+  
+      &-parag{
+          color: Variables.$color-blanco;
+          font-size: Variables.$font-size14;
+      }
+  
+      &-images{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        &-img{
+          position: absolute;
+          top: 0;
+          max-width: 100%;
+          width: 30rem;
+          height: 30rem;
+          object-fit: cover;
+          box-shadow: 4px 8px 10px Variables.$color-negro;
+        }
+      }
+    }
+}
+
+.capitanes{
+    padding: Variables.$padding1;
+    padding-top: 8rem;
+
+    &-title{
+        text-align: center;
+        font-size: Variables.$font-size10;
+        font-family: Variables.$font1;
+    }
+
+    &-cont{
+        @include Mixin.crear-flex(space-around,center);
+        flex-wrap: wrap;
+        padding-top: 6rem;
+
+        &-tarjeta{
+            cursor: pointer;
+            width: 25rem;
+            height: 40rem;
+            margin: 2rem;
+            text-align: center;
+            padding: 2rem;
+            background-color: Variables.$color-cartel-busqueda;
+            border-radius: .6rem;
+            box-shadow: 4px 8px 10px Variables.$color-negro;
+            transition: box-shadow .5s ease;
+
+            &:hover{
+            box-shadow: 4px 8px 10px Variables.$color-rojo;
+
+            }
+
+            &-img{
+                max-width: 100%;
+                width: 20rem;
+                height: 20rem;
+                object-fit: cover;
+            }
+
+            &-text1, &-text2, &-text3, &-precio{
+                font-family: Variables.$font2;
+                margin-bottom: 1rem;
+                font-size: Variables.$font-size12;
+                color: Variables.$color-negro;
+            }
+
+            &-text2{
+                font-size: Variables.$font-size16;
+            }
+            &-text3{
+                font-size: Variables.$font-size13;
+            }
+            &-precio{
+                font-size: Variables.$font-size14;
+                margin: 0;
+            }
+        }
+    }
+    
+}

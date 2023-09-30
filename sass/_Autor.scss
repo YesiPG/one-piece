@@ -1,0 +1,13 @@
+@use "Variables";
+@use "Mixin";
+
+.autor{
+    padding: Variables.$padding1;
+    padding-top: 15rem;
+    &-title{
+        font-family: Variables.$font1;
+        font-size: Variables.$font-size9;
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+}
