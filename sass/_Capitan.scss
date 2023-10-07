@@ -1,0 +1,69 @@
+@use "Variables";
+@use "Mixin";
+
+.cap{
+    padding: Variables.$padding1;
+    padding-top: 15rem;
+    font-family: Variables.$font2;
+    font-size: Variables.$font-size15;
+    
+    &-cont1{
+        @include Mixin.crear-flex(space-between,center);
+        margin-bottom: 4rem;
+        
+        &-text{
+            width: 60%;
+        }
+
+        &-tarjeta{
+            width: 35%;
+            background-color: Variables.$color-rojo-oscuro;
+            padding: 1rem;
+            color: Variables.$color-blanco;
+            border-radius: .6rem;
+
+            &-title{
+                text-align: center;
+                font-family: Variables.$font1;
+                margin-bottom: 1rem
+            }
+
+            &-text{
+                margin-left: 2rem;
+            }
+            &-imagen{
+                @include Mixin.crear-flex(center,center);
+                margin-bottom: 1rem;
+                &-img{
+                    max-width: 100%;
+                    width: 25rem;
+                    height: 30rem;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    &-text{
+        margin-bottom: 4rem;
+    }
+
+    &-cont2{
+        @include Mixin.crear-flex(space-between, flex-start);
+        
+        &-text{
+            width: 60%;
+        }
+
+        &-imagen{
+            width: 35%;
+            &-img{
+                max-width: 100%;
+                width: 35rem;
+                height: 30rem;
+                object-fit: cover;
+            }
+        }
+    }
+}
+

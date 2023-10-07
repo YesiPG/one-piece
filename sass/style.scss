@@ -5,9 +5,10 @@
 @use "Inicio";
 @use "Sagas";
 @use "Autor";
+@use "Capitan";
 @use "Footer";
 
-*{
+* {
   box-sizing: border-box;
   border: none;
   outline: none;
@@ -16,7 +17,7 @@
   padding: 0;
 }
 
-html{
+html {
   font-size: 10px;
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -124,6 +125,31 @@ html{
       }
     }
   }
+  .autor {
+    padding: Variables.$padding2;
+    padding-top: 15rem;
+  }
+  .cap {
+    padding: Variables.$padding2;
+    padding-top: 15rem;
+
+    &-cont1 {
+      &-text {
+        width: 50%;
+      }
+      &-tarjeta {
+        width: 45%;
+      }
+    }
+    &-cont2 {
+      &-text {
+        width: 50%;
+      }
+      &-imagen {
+        width: 45%;
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -173,6 +199,37 @@ html{
   }
   .sagaL {
     padding: Variables.$padding3;
+  }
+  .autor {
+    padding: Variables.$padding3;
+    padding-top: 15rem;
+  }
+  .cap {
+    padding: Variables.$padding3;
+    padding-top: 15rem;
+
+    &-cont1 {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      &-text {
+        width: 100%;
+      }
+      &-tarjeta {
+        width: 60%;
+        margin-bottom: 2rem;
+      }
+    }
+    &-cont2 {
+      flex-wrap: wrap;
+      justify-content: center;
+      &-text {
+        width: 100%;
+      }
+      &-imagen {
+        width: 50%;
+        margin-bottom: 2rem;
+      }
+    }
   }
 }
 
@@ -242,6 +299,32 @@ html{
   .sagaL {
     padding: Variables.$padding5;
   }
+  .autor {
+    padding: Variables.$padding5;
+    padding-top: 15rem;
+    &-cont {
+      @include Mixin.crear-grid(1fr, 40% 60%);
+      &-oda {
+        margin: 0;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  .cap {
+    padding: Variables.$padding5;
+    padding-top: 15rem;
+
+    &-cont1 {
+      &-tarjeta {
+        width: 70%;
+      }
+    }
+    &-cont2 {
+      &-imagen {
+        width: 70%;
+      }
+    }
+  }
 }
 
 @media (max-width: 480px) {
@@ -294,6 +377,25 @@ html{
   .sagaL {
     padding: Variables.$padding6;
   }
+  .autor {
+    padding: Variables.$padding6;
+    padding-top: 15rem;
+  }
+  .cap {
+    padding: Variables.$padding6;
+    padding-top: 15rem;
+
+    &-cont1 {
+      &-tarjeta {
+        width: 80%;
+      }
+    }
+    &-cont2 {
+      &-imagen {
+        width: 80%;
+      }
+    }
+  }
 }
 @media (max-width: 320px) {
   .contH {
@@ -342,5 +444,24 @@ html{
   }
   .sagaL {
     padding: Variables.$padding7;
+  }
+  .autor {
+    padding: Variables.$padding7;
+    padding-top: 15rem;
+  }
+  .cap{
+    padding: Variables.$padding7;
+    padding-top: 15rem;
+
+    &-cont1{
+      &-tarjeta{
+        width: 100%;
+      }
+    }
+    &-cont2{
+      &-imagen{
+        width: 100%;
+      }
+    }
   }
 }
