@@ -82,50 +82,5 @@
 
     }
 
-    &-tripulacion{
-        position: absolute;
-        top: 6rem;
-        right: 18%;
-        @include Mixin.crear-flex(center,center);
-        flex-direction: column;
-        flex-wrap: wrap;
-        background-color: Variables.$color-negro;
-        width: 25%;
-        height: 100vh;
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity .2s ease;
-
-        &-show{
-            opacity: 1;
-            pointer-events: unset;
-        }
-
-        &-close{
-            cursor: pointer;
-            margin-bottom: 1rem;
-            width: 3rem;
-            background-color: Variables.$color-negro;
-            border-radius: 50%;
-            transition: background-color .2s ease;
-
-            &:hover{
-                background-color: Variables.$color-rojo-oscuro;
-            }
-        }
-
-        &-link{
-            color: Variables.$color-blanco;
-            font-size: Variables.$font-size15;
-            font-family: Variables.$font2;
-            margin: 1rem;
-            transition: color .2s ease;
-
-            &:hover{
-                color: Variables.$color-rojo;
-            }
-        }
-
-    }
 }
 

@@ -74,47 +74,6 @@
   width: 3rem;
   pointer-events: none;
 }
-.contH-tripulacion {
-  position: absolute;
-  top: 6rem;
-  right: 18%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  background-color: #000;
-  width: 25%;
-  height: 100vh;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.2s ease;
-}
-.contH-tripulacion-show {
-  opacity: 1;
-  pointer-events: unset;
-}
-.contH-tripulacion-close {
-  cursor: pointer;
-  margin-bottom: 1rem;
-  width: 3rem;
-  background-color: #000;
-  border-radius: 50%;
-  transition: background-color 0.2s ease;
-}
-.contH-tripulacion-close:hover {
-  background-color: #bd0003;
-}
-.contH-tripulacion-link {
-  color: #fff;
-  font-size: 1.8rem;
-  font-family: "Roboto Serif", serif;
-  margin: 1rem;
-  transition: color 0.2s ease;
-}
-.contH-tripulacion-link:hover {
-  color: #ff0000;
-}
 
 .hero {
   display: flex;
@@ -370,7 +329,7 @@
   font-size: 1.8rem;
 }
 .autor-info, .autor-obras {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: "Roboto Serif", serif;
   padding: 4rem 0;
   border-bottom: 1px solid #000;
@@ -402,9 +361,8 @@
 }
 .cap-cont1-tarjeta {
   width: 35%;
-  background-color: #bd0003;
+  background-color: #e0d8b0;
   padding: 1rem;
-  color: #fff;
   border-radius: 0.6rem;
 }
 .cap-cont1-tarjeta-title {
@@ -530,11 +488,6 @@ html {
   }
   .contH-nav-link {
     margin: 1.5rem 0;
-  }
-  .contH-tripulacion {
-    top: 0;
-    right: 0;
-    width: 50%;
   }
   .present-cont1 {
     padding: 0 12rem;
@@ -746,9 +699,6 @@ html {
     right: 4rem;
   }
   .contH-nav {
-    width: 100%;
-  }
-  .contH-tripulacion {
     width: 100%;
   }
   .hero-text {
