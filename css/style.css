@@ -364,6 +364,29 @@
   background-color: #e0d8b0;
   padding: 1rem;
   border-radius: 0.6rem;
+  border: 1px solid #000;
+  animation-name: cambioColor;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: both;
+}
+@keyframes cambioColor {
+  0% {
+    box-shadow: 2px 4px 10px 4px #fff;
+  }
+  25% {
+    box-shadow: 2px 4px 10px 4px #ff0000;
+  }
+  50% {
+    box-shadow: 2px 4px 10px 4px #009929;
+  }
+  75% {
+    box-shadow: 2px 4px 10px 4px #fbf451;
+  }
+  100% {
+    box-shadow: 2px 4px 10px 4px #2196f3;
+  }
 }
 .cap-cont1-tarjeta-title {
   text-align: center;
@@ -372,6 +395,7 @@
 }
 .cap-cont1-tarjeta-text {
   margin-left: 2rem;
+  margin-bottom: 2rem;
 }
 .cap-cont1-tarjeta-imagen {
   display: flex;
@@ -404,6 +428,195 @@
   width: 35rem;
   height: 30rem;
   object-fit: cover;
+}
+
+.trip-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.trip-hero::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/tripulacion-Muguiwara.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.trip-hero-cont {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem 4rem;
+  width: 40%;
+}
+.trip-hero-cont-title {
+  text-align: center;
+  font-family: "Roboto Serif", serif;
+  font-size: 3.8rem;
+  color: #fff;
+  margin-bottom: 4rem;
+}
+.trip-hero-cont-text {
+  font-family: "Roboto Serif", serif;
+  font-size: 2rem;
+  color: #fff;
+}
+.trip-cont {
+  padding: 0 14rem;
+  padding-top: 15rem;
+}
+.trip-cont-nakama {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.trip-cont-nakama-imagen {
+  width: 35%;
+}
+.trip-cont-nakama-imagen-img {
+  max-width: 100%;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  box-shadow: 2px 4px 10px #000;
+  object-fit: cover;
+}
+.trip-cont-nakama-imagen:nth-child(even) {
+  margin-left: 8rem;
+}
+.trip-cont-nakama-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000;
+  padding: 4rem 6rem;
+  width: 70%;
+  border-radius: 3rem;
+}
+.trip-cont-nakama-info-title {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  color: #ff0000;
+  margin-bottom: 2rem;
+}
+.trip-cont-nakama-info-title-2 {
+  color: #009929;
+}
+.trip-cont-nakama-info-title-3 {
+  color: #ff9800;
+}
+.trip-cont-nakama-info-title-4 {
+  color: #8d4925;
+}
+.trip-cont-nakama-info-title-5 {
+  color: #fbf451;
+}
+.trip-cont-nakama-info-title-6 {
+  color: #ff69b4;
+}
+.trip-cont-nakama-info-title-7 {
+  color: #7f00b2;
+}
+.trip-cont-nakama-info-title-8 {
+  color: #009d71;
+}
+.trip-cont-nakama-info-title-9 {
+  color: #8c8c8c;
+}
+.trip-cont-nakama-info-title-10 {
+  color: #2196f3;
+}
+.trip-cont-nakama-info-text {
+  color: #fff;
+  font-family: "Roboto Serif", serif;
+  font-size: 1.8rem;
+}
+.trip-cont-nakama-info-link {
+  cursor: pointer;
+  text-align: center;
+  margin-top: 2rem;
+  font-family: "Roboto Serif", serif;
+  font-size: 1.8rem;
+  background-color: #bd0003;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 0.6rem;
+  transition: background-color 0.2s ease;
+}
+.trip-cont-nakama-info-link:hover {
+  background-color: #ff0000;
+}
+.trip-cont-nakama-info-link-2 {
+  background-color: #006414;
+  transition: background-color 0.2s ease;
+}
+.trip-cont-nakama-info-link-2:hover {
+  background-color: #009929;
+}
+.trip-cont-nakama-info-link-3 {
+  background-color: #c06500;
+  transition: background-color 0.2s ease;
+}
+.trip-cont-nakama-info-link-3:hover {
+  background-color: #ff9800;
+}
+.trip-cont-nakama-info-link-4 {
+  background-color: #5d2417;
+  transition: background-color 0.2s ease;
+}
+.trip-cont-nakama-info-link-4:hover {
+  background-color: #8d4925;
+}
+.trip-cont-nakama-info-link-5 {
+  background-color: #fee528;
+  color: #000;
+  transition: background-color 0.2s ease;
+}
+.trip-cont-nakama-info-link-5:hover {
+  background-color: #fbf451;
+}
+.trip-cont-nakama-info-link-6 {
+  background-color: #c33b80;
+  transition: background-color 0.2s ease;
+}
+.trip-cont-nakama-info-link-6:hover {
+  background-color: #ff69b4;
+}
+.trip-cont-nakama-info-link-7 {
+  background-color: #4c007d;
+  transition: background-color 0.2s ease;
+}
+.trip-cont-nakama-info-link-7:hover {
+  background-color: #7f00b2;
+}
+.trip-cont-nakama-info-link-8 {
+  background-color: #026842;
+  transition: background-color 0.2s ease;
+}
+.trip-cont-nakama-info-link-8:hover {
+  background-color: #009d71;
+}
+.trip-cont-nakama-info-link-9 {
+  background-color: #666666;
+  transition: background-color 0.2s ease;
+}
+.trip-cont-nakama-info-link-9:hover {
+  background-color: #8c8c8c;
+}
+.trip-cont-nakama-info-link-10 {
+  background-color: #1465bb;
+  transition: background-color 0.2s ease;
+}
+.trip-cont-nakama-info-link-10:hover {
+  background-color: #2196f3;
 }
 
 .footer {
@@ -451,6 +664,17 @@ html {
     top: 6rem;
     right: 25%;
     width: 30%;
+  }
+  .trip-cont-nakama-imagen {
+    width: 35%;
+  }
+  .trip-cont-nakama-imagen-img {
+    width: 25rem;
+    height: 25rem;
+  }
+  .trip-cont-nakama-info {
+    width: 60%;
+    padding: 2rem 4rem;
   }
 }
 @media (max-width: 834px) {
@@ -546,6 +770,25 @@ html {
   .cap-cont2-imagen {
     width: 45%;
   }
+  .trip-hero-cont {
+    width: 70%;
+  }
+  .trip-hero-cont-text {
+    font-size: 1.8rem;
+  }
+  .trip-cont {
+    padding: 0 12rem;
+    padding-top: 15rem;
+  }
+  .trip-cont-nakama-imagen {
+    width: 40%;
+  }
+  .trip-cont-nakama-imagen:nth-child(even) {
+    margin-left: 3.5rem;
+  }
+  .trip-cont-nakama-info {
+    width: 50%;
+  }
 }
 @media (max-width: 768px) {
   .contH {
@@ -614,6 +857,19 @@ html {
     width: 50%;
     margin-bottom: 2rem;
   }
+  .trip-hero-cont-title {
+    font-size: 3.3rem;
+  }
+  .trip-cont {
+    padding: 0 10rem;
+    padding-top: 15rem;
+  }
+  .trip-cont-nakama-imagen {
+    width: 45%;
+  }
+  .trip-cont-nakama-imagen:nth-child(even) {
+    margin-left: 3.5rem;
+  }
 }
 @media (max-width: 576px) {
   .contH {
@@ -658,6 +914,11 @@ html {
   .capitanes-title {
     font-size: 2.8rem;
   }
+  .capitanes-cont-tarjeta {
+    width: 80%;
+    margin: 0;
+    margin-bottom: 4rem;
+  }
   .sagaI {
     padding: 0 6rem;
     padding-top: 15rem;
@@ -687,6 +948,32 @@ html {
   }
   .cap-cont2-imagen {
     width: 70%;
+  }
+  .trip-hero-cont {
+    width: 75%;
+  }
+  .trip-hero-cont-title {
+    font-size: 3rem;
+  }
+  .trip-cont {
+    padding: 0 6rem;
+    padding-top: 15rem;
+  }
+  .trip-cont-nakama {
+    flex-direction: column;
+  }
+  .trip-cont-nakama:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+  .trip-cont-nakama-imagen {
+    width: 55%;
+    margin-bottom: 4rem;
+  }
+  .trip-cont-nakama-imagen:nth-child(even) {
+    margin-left: 0;
+  }
+  .trip-cont-nakama-info {
+    width: 100%;
   }
 }
 @media (max-width: 480px) {
@@ -721,6 +1008,9 @@ html {
     padding: 0 4rem;
     padding-top: 8rem;
   }
+  .capitanes-cont-tarjeta {
+    width: 90%;
+  }
   .sagaI {
     padding: 0 4rem;
     padding-top: 15rem;
@@ -741,6 +1031,20 @@ html {
   }
   .cap-cont2-imagen {
     width: 80%;
+  }
+  .trip-hero-cont {
+    padding: 2rem;
+    width: 80%;
+  }
+  .trip-hero-cont-title {
+    font-size: 2.5rem;
+  }
+  .trip-cont {
+    padding: 0 4rem;
+    padding-top: 15rem;
+  }
+  .trip-cont-nakama-imagen {
+    width: 65%;
   }
 }
 @media (max-width: 320px) {
@@ -772,6 +1076,9 @@ html {
     padding: 0 2rem;
     padding-top: 8rem;
   }
+  .capitanes-cont-tarjeta {
+    width: 100%;
+  }
   .sagaI {
     padding: 0 2rem;
     padding-top: 15rem;
@@ -792,6 +1099,16 @@ html {
   }
   .cap-cont2-imagen {
     width: 100%;
+  }
+  .trip-hero-cont {
+    width: 100%;
+  }
+  .trip-cont {
+    padding: 0 2rem;
+    padding-top: 15rem;
+  }
+  .trip-cont-nakama-imagen {
+    width: 90%;
   }
 }
 

@@ -1,0 +1,201 @@
+@use "Variables";
+@use "Mixin";
+
+.trip {
+  &-hero {
+    @include Mixin.crear-flex(center, center);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../images/tripulacion-Muguiwara.webp");
+      background-size: cover;
+      background-repeat: no-repeat;
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    &-cont {
+      background-color: Variables.$color-negro-opacity;
+      padding: 2rem 4rem;
+      width: 40%;
+
+      &-title {
+        text-align: center;
+        font-family: Variables.$font2;
+        font-size: Variables.$font-size7;
+        color: Variables.$color-blanco;
+        margin-bottom: 4rem;
+      }
+
+      &-text {
+        font-family: Variables.$font2;
+        font-size: Variables.$font-size14;
+        color: Variables.$color-blanco;
+      }
+    }
+  }
+
+  &-cont {
+    padding: Variables.$padding1;
+    padding-top: 15rem;
+
+    &-nakama {
+      @include Mixin.crear-flex(space-between, center);
+      margin-bottom: 4rem;
+
+      &-imagen {
+        width: 35%;
+
+        &-img {
+          max-width: 100%;
+          width: 30rem;
+          height: 30rem;
+          border-radius: 50%;
+          box-shadow: 2px 4px 10px Variables.$color-negro;
+          object-fit: cover;
+        }
+
+        &:nth-child(even) {
+          margin-left: 8rem;
+        }
+      }
+
+      &-info {
+        @include Mixin.crear-flex(center, center);
+        flex-direction: column;
+        background-color: Variables.$color-negro;
+        padding: 4rem 6rem;
+        width: 70%;
+        border-radius: 3rem;
+
+        &-title {
+            text-align: center;
+          font-family: Variables.$font1;
+          font-size: Variables.$font-size10;
+          color: Variables.$color-rojo;
+          margin-bottom: 2rem;
+
+          &-2 {
+            color: Variables.$color-verde;
+          }
+          &-3 {
+            color: Variables.$color-naranja;
+          }
+          &-4 {
+            color: Variables.$color-cafe;
+          }
+          &-5 {
+            color: Variables.$color-amarillo;
+          }
+          &-6 {
+            color: Variables.$color-rosa;
+          }
+          &-7 {
+            color: Variables.$color-morado;
+          }
+          &-8 {
+            color: Variables.$color-esmeralda;
+          }
+          &-9 {
+            color: Variables.$color-gris;
+          }
+          &-10 {
+            color: Variables.$color-azul;
+          }
+        }
+        &-text {
+          color: Variables.$color-blanco;
+          font-family: Variables.$font2;
+          font-size: Variables.$font-size15;
+        }
+
+        &-link {
+          cursor: pointer;
+          text-align: center;
+          margin-top: 2rem;
+          font-family: Variables.$font2;
+          font-size: Variables.$font-size15;
+          background-color: Variables.$color-rojo-oscuro;
+          color: Variables.$color-blanco;
+          padding: 1rem 2rem;
+          border-radius: 0.6rem;
+          transition: background-color 0.2s ease;
+
+          &:hover {
+            background-color: Variables.$color-rojo;
+          }
+
+          &-2 {
+            background-color: Variables.$color-verde-oscuro;
+            transition: background-color 0.2s ease;
+            &:hover {
+                background-color: Variables.$color-verde;
+              }
+          }
+          &-3 {
+            background-color: Variables.$color-naranja-oscuro;
+            transition: background-color 0.2s ease;
+            &:hover {
+                background-color: Variables.$color-naranja;
+              }
+          }
+          &-4 {
+            background-color: Variables.$color-cafe-oscuro;
+            transition: background-color 0.2s ease;
+            &:hover {
+                background-color: Variables.$color-cafe;
+              }
+          }
+          &-5 {
+            background-color: Variables.$color-amarillo-oscuro;
+            color: Variables.$color-negro;
+            transition: background-color 0.2s ease;
+            &:hover {
+                background-color: Variables.$color-amarillo;
+              }
+          }
+          &-6 {
+            background-color: Variables.$color-rosa-oscuro;
+            transition: background-color 0.2s ease;
+            &:hover {
+                background-color: Variables.$color-rosa;
+              }
+          }
+          &-7 {
+            background-color: Variables.$color-morado-oscuro;
+            transition: background-color 0.2s ease;
+            &:hover {
+                background-color: Variables.$color-morado;
+              }
+          }
+          &-8 {
+            background-color: Variables.$color-esmeralda-oscuro;
+            transition: background-color 0.2s ease;
+            &:hover {
+                background-color: Variables.$color-esmeralda;
+              }
+          }
+          &-9 {
+            background-color: Variables.$color-gris-oscuro;
+            transition: background-color 0.2s ease;
+            &:hover {
+                background-color: Variables.$color-gris;
+              }
+          }
+          &-10 {
+            background-color: Variables.$color-azul-oscuro;
+            transition: background-color 0.2s ease;
+            &:hover {
+                background-color: Variables.$color-azul;
+              }
+          }
+        }
+      }
+    }
+  }
+}

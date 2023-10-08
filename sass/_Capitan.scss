@@ -20,6 +20,20 @@
             background-color: Variables.$color-cartel-busqueda;
             padding: 1rem;
             border-radius: .6rem;
+            border: 1px solid Variables.$color-negro;
+            animation-name: cambioColor;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: both;
+
+            @keyframes cambioColor {
+                0%{box-shadow: 2px 4px 10px 4px Variables.$color-blanco;}
+                25%{box-shadow: 2px 4px 10px 4px Variables.$color-rojo;}
+                50%{box-shadow: 2px 4px 10px 4px Variables.$color-verde;}
+                75%{box-shadow: 2px 4px 10px 4px Variables.$color-amarillo;}
+                100%{box-shadow: 2px 4px 10px 4px Variables.$color-azul;}
+            }
 
             &-title{
                 text-align: center;
@@ -29,6 +43,7 @@
 
             &-text{
                 margin-left: 2rem;
+                margin-bottom: 2rem;
             }
             &-imagen{
                 @include Mixin.crear-flex(center,center);

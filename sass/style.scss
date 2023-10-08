@@ -6,6 +6,7 @@
 @use "Sagas";
 @use "Autor";
 @use "Capitan";
+@use "Tripulacion";
 @use "Footer";
 
 * {
@@ -31,6 +32,26 @@ html {
       top: 6rem;
       right: 25%;
       width: 30%;
+    }
+  }
+  .trip{
+    &-cont{
+
+      &-nakama{
+
+        &-imagen{
+          width: 35%;
+          &-img{
+            width: 25rem;
+            height: 25rem;
+          }
+        }
+
+        &-info{
+          width: 60%;
+          padding: 2rem 4rem;
+        }
+      }
     }
   }
 }
@@ -145,6 +166,34 @@ html {
       }
     }
   }
+  .trip{
+    &-hero{
+      &-cont{
+        width: 70%;
+
+        &-text{
+          font-size: Variables.$font-size15;
+        }
+      }
+    }
+    &-cont{
+      padding: Variables.$padding2;
+      padding-top: 15rem;
+      &-nakama{
+
+        &-imagen{
+          width: 40%;
+          &:nth-child(even) {
+            margin-left: 3.5rem;
+          }
+        }
+
+        &-info{
+          width: 50%;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -226,6 +275,29 @@ html {
       }
     }
   }
+  .trip{
+    &-hero{
+      &-cont{
+
+        &-title{
+          font-size: Variables.$font-size9;
+        }
+      }
+    }
+    &-cont{
+      padding: Variables.$padding3;
+      padding-top: 15rem;
+      &-nakama{
+
+        &-imagen{
+          width: 45%;
+          &:nth-child(even) {
+            margin-left: 3.5rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 576px) {
@@ -285,6 +357,14 @@ html {
     &-title {
       font-size: Variables.$font-size11;
     }
+
+    &-cont{
+      &-tarjeta{
+        width: 80%;
+        margin: 0;
+        margin-bottom: 4rem;
+      }
+    }
   }
 
   .sagaI {
@@ -317,6 +397,40 @@ html {
     &-cont2 {
       &-imagen {
         width: 70%;
+      }
+    }
+  }
+  .trip{
+    &-hero{
+      &-cont{
+        width: 75%;
+        &-title{
+          font-size: Variables.$font-size10;
+        }
+      }
+    }
+
+    &-cont{
+      padding: Variables.$padding5;
+      padding-top: 15rem;
+
+      &-nakama{
+        flex-direction: column;
+        &:nth-child(even){
+          flex-direction: column-reverse;
+        }
+
+        &-imagen{
+          width: 55%;
+          margin-bottom: 4rem;
+          &:nth-child(even) {
+            margin-left: 0;
+          }
+        }
+
+        &-info{
+          width: 100%;
+        }
       }
     }
   }
@@ -360,6 +474,11 @@ html {
   .capitanes {
     padding: Variables.$padding6;
     padding-top: 8rem;
+    &-cont{
+      &-tarjeta{
+        width: 90%;
+      }
+    }
   }
   .sagaI {
     padding: Variables.$padding6;
@@ -387,7 +506,30 @@ html {
       }
     }
   }
+  .trip{
+    &-hero{
+      &-cont{
+        padding: 2rem;
+        width: 80%;
+        &-title{
+          font-size: Variables.$font-size12;
+        }
+      }
+    }
+    &-cont{
+      padding: Variables.$padding6;
+      padding-top: 15rem;
+
+      &-nakama{
+
+        &-imagen{
+          width: 65%;
+        }
+      }
+    }
+  }
 }
+
 @media (max-width: 320px) {
   .contH {
     padding: Variables.$padding7;
@@ -428,6 +570,11 @@ html {
   .capitanes {
     padding: Variables.$padding7;
     padding-top: 8rem;
+    &-cont{
+      &-tarjeta{
+        width: 100%;
+      }
+    }
   }
   .sagaI {
     padding: Variables.$padding7;
@@ -452,6 +599,24 @@ html {
     &-cont2{
       &-imagen{
         width: 100%;
+      }
+    }
+  }
+  .trip{
+    &-hero{
+      &-cont{
+        width: 100%;
+      }
+    }
+    &-cont{
+      padding: Variables.$padding7;
+      padding-top: 15rem;
+
+      &-nakama{
+
+        &-imagen{
+          width: 90%;
+        }
       }
     }
   }
