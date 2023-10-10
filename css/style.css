@@ -619,6 +619,128 @@
   background-color: #2196f3;
 }
 
+.nak {
+  margin-bottom: 10rem;
+}
+.nak-cont1 {
+  padding: 0 14rem;
+  padding-top: 15rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 4rem;
+}
+.nak-cont1-text {
+  width: 60%;
+  font-size: 1.8rem;
+  font-family: "Roboto Serif", serif;
+}
+.nak-cont1-tarjeta {
+  width: 30%;
+  background-color: #bd0003;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.nak-cont1-tarjeta-title {
+  font-size: 2.8rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+.nak-cont1-tarjeta-text {
+  font-family: "Roboto Serif", serif;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.nak-cont1-tarjeta-imagen {
+  margin-bottom: 0.5rem;
+}
+.nak-cont1-tarjeta-imagen-img {
+  max-width: 100%;
+  width: 30rem;
+  height: 30rem;
+  object-fit: cover;
+}
+.nak-cont2 {
+  padding: 0 14rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #000;
+}
+.nak-cont2-text {
+  color: #fff;
+  font-family: "Roboto Serif", serif;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.nak-cont2-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.nak-cont2-flex-imagen {
+  width: 35%;
+}
+.nak-cont2-flex-imagen-img {
+  max-width: 100%;
+  width: 30rem;
+  height: 30rem;
+  object-fit: cover;
+}
+.nak-cont2-flex-text {
+  width: 70%;
+  color: #fff;
+  font-family: "Roboto Serif", serif;
+  font-size: 1.8rem;
+}
+.nak-cont3 {
+  padding: 0 14rem;
+}
+.nak-cont3-title {
+  text-align: center;
+  font-family: "Roboto Serif", serif;
+  font-size: 2.5rem;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+}
+.nak-cont3-carrusel {
+  width: 100%;
+  height: 40rem;
+  position: relative;
+}
+.nak-cont3-carrusel-escenas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+.nak-cont3-carrusel-escenas-left, .nak-cont3-carrusel-escenas-right {
+  cursor: pointer;
+  width: 3.5rem;
+}
+.nak-cont3-carrusel-escenas-video-v {
+  width: 70rem;
+  height: 40rem;
+  margin-bottom: 2rem;
+}
+.nak-cont3-carrusel-escenas-video-text {
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: "Roboto Serif", serif;
+}
+.nak-cont3-carrusel-active {
+  opacity: 1;
+  pointer-events: unset;
+}
+
 .footer {
   background-color: #000;
   margin-top: 20rem;
@@ -675,6 +797,22 @@ html {
   .trip-cont-nakama-info {
     width: 60%;
     padding: 2rem 4rem;
+  }
+  .nak-cont1-text {
+    width: 50%;
+  }
+  .nak-cont1-tarjeta {
+    width: 40%;
+  }
+  .nak-cont2-flex-imagen {
+    width: 40%;
+  }
+  .nak-cont2-flex-text {
+    width: 50%;
+  }
+  .nak-cont3-carrusel-escenas-video-v {
+    width: 60rem;
+    height: 40rem;
   }
 }
 @media (max-width: 834px) {
@@ -789,6 +927,38 @@ html {
   .trip-cont-nakama-info {
     width: 50%;
   }
+  .nak-cont1 {
+    padding: 0 12rem;
+    padding-top: 15rem;
+  }
+  .nak-cont1-text {
+    width: 45%;
+  }
+  .nak-cont1-tarjeta {
+    width: 50%;
+  }
+  .nak-cont2 {
+    padding: 0 12rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .nak-cont2-flex-imagen {
+    width: 45%;
+  }
+  .nak-cont2-flex-text {
+    width: 50%;
+  }
+  .nak-cont3 {
+    padding: 0 12rem;
+    padding-top: 4rem;
+  }
+  .nak-cont3-carrusel-escenas-left, .nak-cont3-carrusel-escenas-right {
+    width: 3.5rem;
+  }
+  .nak-cont3-carrusel-escenas-video-v {
+    width: 45rem;
+    height: 35rem;
+  }
 }
 @media (max-width: 768px) {
   .contH {
@@ -869,6 +1039,23 @@ html {
   }
   .trip-cont-nakama-imagen:nth-child(even) {
     margin-left: 3.5rem;
+  }
+  .nak-cont1 {
+    padding: 0 10rem;
+    padding-top: 15rem;
+  }
+  .nak-cont2 {
+    padding: 0 10rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .nak-cont3 {
+    padding: 0 10rem;
+    padding-top: 4rem;
+  }
+  .nak-cont3-carrusel-escenas-video-v {
+    width: 40rem;
+    height: 30rem;
   }
 }
 @media (max-width: 576px) {
@@ -975,6 +1162,49 @@ html {
   .trip-cont-nakama-info {
     width: 100%;
   }
+  .nak-cont1 {
+    padding: 0 6rem;
+    padding-top: 15rem;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .nak-cont1-text {
+    width: 100%;
+  }
+  .nak-cont1-tarjeta {
+    width: 70%;
+    margin-bottom: 2rem;
+  }
+  .nak-cont2 {
+    padding: 0 6rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .nak-cont2-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nak-cont2-flex-imagen {
+    width: 70%;
+    margin-bottom: 2rem;
+  }
+  .nak-cont2-flex-text {
+    width: 100%;
+  }
+  .nak-cont3 {
+    padding: 0 6rem;
+    padding-top: 4rem;
+  }
+  .nak-cont3-carrusel {
+    height: 25rem;
+  }
+  .nak-cont3-carrusel-escenas-left, .nak-cont3-carrusel-escenas-right {
+    width: 3rem;
+  }
+  .nak-cont3-carrusel-escenas-video-v {
+    width: 35rem;
+    height: 30rem;
+  }
 }
 @media (max-width: 480px) {
   .contH {
@@ -1046,6 +1276,29 @@ html {
   .trip-cont-nakama-imagen {
     width: 65%;
   }
+  .nak-cont1 {
+    padding: 0 4rem;
+    padding-top: 15rem;
+  }
+  .nak-cont1-tarjeta {
+    width: 80%;
+  }
+  .nak-cont2 {
+    padding: 0 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .nak-cont2-flex-imagen {
+    width: 80%;
+  }
+  .nak-cont3 {
+    padding: 0 4rem;
+    padding-top: 4rem;
+  }
+  .nak-cont3-carrusel-escenas-video-v {
+    width: 30rem;
+    height: 25rem;
+  }
 }
 @media (max-width: 320px) {
   .contH {
@@ -1109,6 +1362,36 @@ html {
   }
   .trip-cont-nakama-imagen {
     width: 90%;
+  }
+  .nak-cont1 {
+    padding: 0 2rem;
+    padding-top: 15rem;
+  }
+  .nak-cont1-tarjeta {
+    width: 100%;
+  }
+  .nak-cont2 {
+    padding: 0 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .nak-cont2-flex-imagen {
+    width: 100%;
+  }
+  .nak-cont3 {
+    padding: 0 2rem;
+    padding-top: 4rem;
+  }
+  .nak-cont3-carrusel-escenas {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nak-cont3-carrusel-escenas-video-v {
+    width: 100%;
+    height: 20rem;
+  }
+  .nak-cont3-carrusel-escenas-video-text {
+    margin-bottom: 2rem;
   }
 }
 

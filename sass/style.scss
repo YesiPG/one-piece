@@ -7,6 +7,7 @@
 @use "Autor";
 @use "Capitan";
 @use "Tripulacion";
+@use "Nakama";
 @use "Footer";
 
 * {
@@ -34,22 +35,56 @@ html {
       width: 30%;
     }
   }
-  .trip{
-    &-cont{
-
-      &-nakama{
-
-        &-imagen{
+  .trip {
+    &-cont {
+      &-nakama {
+        &-imagen {
           width: 35%;
-          &-img{
+          &-img {
             width: 25rem;
             height: 25rem;
           }
         }
 
-        &-info{
+        &-info {
           width: 60%;
           padding: 2rem 4rem;
+        }
+      }
+    }
+  }
+
+  .nak {
+    &-cont1 {
+      &-text {
+        width: 50%;
+      }
+      &-tarjeta {
+        width: 40%;
+      }
+    }
+
+    &-cont2 {
+      &-flex {
+        &-imagen {
+          width: 40%;
+        }
+
+        &-text {
+          width: 50%;
+        }
+      }
+    }
+
+    &-cont3 {
+      &-carrusel {
+        &-escenas {
+          &-video {
+            &-v {
+              width: 60rem;
+              height: 40rem;
+            }
+          }
         }
       }
     }
@@ -166,30 +201,78 @@ html {
       }
     }
   }
-  .trip{
-    &-hero{
-      &-cont{
+  .trip {
+    &-hero {
+      &-cont {
         width: 70%;
 
-        &-text{
+        &-text {
           font-size: Variables.$font-size15;
         }
       }
     }
-    &-cont{
+    &-cont {
       padding: Variables.$padding2;
       padding-top: 15rem;
-      &-nakama{
-
-        &-imagen{
+      &-nakama {
+        &-imagen {
           width: 40%;
           &:nth-child(even) {
             margin-left: 3.5rem;
           }
         }
 
-        &-info{
+        &-info {
           width: 50%;
+        }
+      }
+    }
+  }
+
+  .nak {
+    &-cont1 {
+      padding: Variables.$padding2;
+      padding-top: 15rem;
+      &-text {
+        width: 45%;
+      }
+      &-tarjeta {
+        width: 50%;
+      }
+    }
+
+    &-cont2 {
+      padding: Variables.$padding2;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      &-flex {
+        &-imagen {
+          width: 45%;
+        }
+
+        &-text {
+          width: 50%;
+        }
+      }
+    }
+
+    &-cont3 {
+      padding: Variables.$padding2;
+      padding-top: 4rem;
+
+      &-carrusel {
+        &-escenas {
+
+          &-left,&-right{
+            width: 3.5rem;
+
+        }
+          &-video {
+            &-v {
+              width: 45rem;
+              height: 35rem;
+            }
+          }
         }
       }
     }
@@ -275,24 +358,50 @@ html {
       }
     }
   }
-  .trip{
-    &-hero{
-      &-cont{
-
-        &-title{
+  .trip {
+    &-hero {
+      &-cont {
+        &-title {
           font-size: Variables.$font-size9;
         }
       }
     }
-    &-cont{
+    &-cont {
       padding: Variables.$padding3;
       padding-top: 15rem;
-      &-nakama{
-
-        &-imagen{
+      &-nakama {
+        &-imagen {
           width: 45%;
           &:nth-child(even) {
             margin-left: 3.5rem;
+          }
+        }
+      }
+    }
+  }
+  .nak {
+    &-cont1 {
+      padding: Variables.$padding3;
+      padding-top: 15rem;
+    }
+
+    &-cont2 {
+      padding: Variables.$padding3;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    &-cont3 {
+      padding: Variables.$padding3;
+      padding-top: 4rem;
+
+      &-carrusel {
+        &-escenas {
+          &-video {
+            &-v {
+              width: 40rem;
+              height: 30rem;
+            }
           }
         }
       }
@@ -358,8 +467,8 @@ html {
       font-size: Variables.$font-size11;
     }
 
-    &-cont{
-      &-tarjeta{
+    &-cont {
+      &-tarjeta {
         width: 80%;
         margin: 0;
         margin-bottom: 4rem;
@@ -400,27 +509,27 @@ html {
       }
     }
   }
-  .trip{
-    &-hero{
-      &-cont{
+  .trip {
+    &-hero {
+      &-cont {
         width: 75%;
-        &-title{
+        &-title {
           font-size: Variables.$font-size10;
         }
       }
     }
 
-    &-cont{
+    &-cont {
       padding: Variables.$padding5;
       padding-top: 15rem;
 
-      &-nakama{
+      &-nakama {
         flex-direction: column;
-        &:nth-child(even){
+        &:nth-child(even) {
           flex-direction: column-reverse;
         }
 
-        &-imagen{
+        &-imagen {
           width: 55%;
           margin-bottom: 4rem;
           &:nth-child(even) {
@@ -428,8 +537,65 @@ html {
           }
         }
 
-        &-info{
+        &-info {
           width: 100%;
+        }
+      }
+    }
+  }
+
+  .nak {
+    &-cont1 {
+      padding: Variables.$padding5;
+      padding-top: 15rem;
+      flex-direction: column-reverse;
+      align-items: center;
+      &-text {
+        width: 100%;
+      }
+      &-tarjeta {
+        width: 70%;
+        margin-bottom: 2rem;
+      }
+    }
+
+    &-cont2 {
+      padding: Variables.$padding5;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      &-flex {
+        flex-direction: column;
+        align-items: center;
+        &-imagen {
+          width: 70%;
+          margin-bottom: 2rem;
+        }
+
+        &-text {
+          width: 100%;
+        }
+      }
+    }
+
+    &-cont3 {
+      padding: Variables.$padding5;
+      padding-top: 4rem;
+
+      &-carrusel {
+        height: 25rem;
+
+        &-escenas {
+
+          &-left,&-right{
+            width: 3rem;
+
+        }
+          &-video {
+            &-v {
+              width: 35rem;
+              height: 30rem;
+            }
+          }
         }
       }
     }
@@ -474,8 +640,8 @@ html {
   .capitanes {
     padding: Variables.$padding6;
     padding-top: 8rem;
-    &-cont{
-      &-tarjeta{
+    &-cont {
+      &-tarjeta {
         width: 90%;
       }
     }
@@ -506,24 +672,62 @@ html {
       }
     }
   }
-  .trip{
-    &-hero{
-      &-cont{
+  .trip {
+    &-hero {
+      &-cont {
         padding: 2rem;
         width: 80%;
-        &-title{
+        &-title {
           font-size: Variables.$font-size12;
         }
       }
     }
-    &-cont{
+    &-cont {
       padding: Variables.$padding6;
       padding-top: 15rem;
 
-      &-nakama{
-
-        &-imagen{
+      &-nakama {
+        &-imagen {
           width: 65%;
+        }
+      }
+    }
+  }
+  .nak {
+    &-cont1 {
+      padding: Variables.$padding6;
+      padding-top: 15rem;
+
+      &-tarjeta {
+        width: 80%;
+      }
+    }
+
+    &-cont2 {
+      padding: Variables.$padding6;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      &-flex {
+        &-imagen {
+          width: 80%;
+        }
+      }
+    }
+
+    &-cont3 {
+      padding: Variables.$padding6;
+      padding-top: 4rem;
+
+      &-carrusel {
+
+        &-escenas {
+
+          &-video {
+            &-v {
+              width: 30rem;
+              height: 25rem;
+            }
+          }
         }
       }
     }
@@ -570,8 +774,8 @@ html {
   .capitanes {
     padding: Variables.$padding7;
     padding-top: 8rem;
-    &-cont{
-      &-tarjeta{
+    &-cont {
+      &-tarjeta {
         width: 100%;
       }
     }
@@ -587,35 +791,77 @@ html {
     padding: Variables.$padding7;
     padding-top: 15rem;
   }
-  .cap{
+  .cap {
     padding: Variables.$padding7;
     padding-top: 15rem;
 
-    &-cont1{
-      &-tarjeta{
+    &-cont1 {
+      &-tarjeta {
         width: 100%;
       }
     }
-    &-cont2{
-      &-imagen{
+    &-cont2 {
+      &-imagen {
         width: 100%;
       }
     }
   }
-  .trip{
-    &-hero{
-      &-cont{
+  .trip {
+    &-hero {
+      &-cont {
         width: 100%;
       }
     }
-    &-cont{
+    &-cont {
       padding: Variables.$padding7;
       padding-top: 15rem;
 
-      &-nakama{
-
-        &-imagen{
+      &-nakama {
+        &-imagen {
           width: 90%;
+        }
+      }
+    }
+  }
+  .nak {
+    &-cont1 {
+      padding: Variables.$padding7;
+      padding-top: 15rem;
+
+      &-tarjeta {
+        width: 100%;
+      }
+    }
+
+    &-cont2 {
+      padding: Variables.$padding7;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      &-flex {
+        &-imagen {
+          width: 100%;
+        }
+      }
+    }
+
+    &-cont3 {
+      padding: Variables.$padding7;
+      padding-top: 4rem;
+
+      &-carrusel {
+
+        &-escenas {
+          flex-direction: column;
+          align-items: center;
+          &-video {
+            &-v {
+              width: 100%;
+              height: 20rem;
+            }
+            &-text{
+              margin-bottom: 2rem;
+            }
+          }
         }
       }
     }
