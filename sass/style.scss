@@ -78,10 +78,12 @@ html {
 
     &-cont3 {
       &-carrusel {
+        height: 50rem;
+
         &-escenas {
           &-video {
             &-v {
-              width: 60rem;
+              width: 70rem;
               height: 40rem;
             }
           }
@@ -261,15 +263,12 @@ html {
       padding-top: 4rem;
 
       &-carrusel {
+        height: 40rem;
+
         &-escenas {
-
-          &-left,&-right{
-            width: 3.5rem;
-
-        }
           &-video {
             &-v {
-              width: 45rem;
+              width: 50rem;
               height: 35rem;
             }
           }
@@ -396,14 +395,7 @@ html {
       padding-top: 4rem;
 
       &-carrusel {
-        &-escenas {
-          &-video {
-            &-v {
-              width: 40rem;
-              height: 30rem;
-            }
-          }
-        }
+        height: 35rem;
       }
     }
   }
@@ -585,14 +577,9 @@ html {
         height: 25rem;
 
         &-escenas {
-
-          &-left,&-right{
-            width: 3rem;
-
-        }
           &-video {
             &-v {
-              width: 35rem;
+              width: 40rem;
               height: 30rem;
             }
           }
@@ -719,13 +706,11 @@ html {
       padding-top: 4rem;
 
       &-carrusel {
-
         &-escenas {
-
           &-video {
             &-v {
-              width: 30rem;
-              height: 25rem;
+              width: 35rem;
+              height: 27rem;
             }
           }
         }
@@ -849,17 +834,13 @@ html {
       padding-top: 4rem;
 
       &-carrusel {
-
         &-escenas {
           flex-direction: column;
           align-items: center;
           &-video {
             &-v {
               width: 100%;
-              height: 20rem;
-            }
-            &-text{
-              margin-bottom: 2rem;
+              height: 23.5rem;
             }
           }
         }
