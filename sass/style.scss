@@ -8,9 +8,10 @@
 @use "Capitan";
 @use "Tripulacion";
 @use "Nakama";
+@use "Manga";
 @use "Footer";
 
-* {
+*, *::before, *::after{
   box-sizing: border-box;
   border: none;
   outline: none;

@@ -775,6 +775,113 @@
   width: 3.5rem;
 }
 
+.manga .mHero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+.manga .mHero::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/manga2.webp");
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.manga .mHero-cont {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0 14rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.manga .mHero-cont-titulo {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.8rem;
+  color: #fff;
+  text-align: center;
+}
+.manga .mBody {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  grid-template-rows: 1fr;
+  padding: 0 14rem;
+  padding-top: 4rem;
+}
+.manga .mBody-cont1-text1 {
+  background-color: #1465bb;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  font-family: "Roboto Serif", serif;
+  text-align: center;
+  border-radius: 0.6rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.manga .mBody-cont1-img {
+  max-width: 100%;
+  width: 100%;
+}
+.manga .mBody-cont2 {
+  margin-left: 4rem;
+  font-family: "Roboto Serif", serif;
+  font-size: 1.8rem;
+}
+.manga .mBody-cont2-text2 {
+  margin-top: 2rem;
+}
+.manga .mBody-cont2-text2-circulo {
+  background-color: #009929;
+  border-radius: 50%;
+  color: #009929;
+}
+.manga .mBody-cont2-text2-genero {
+  padding: 1rem 2rem;
+  background-color: #8c8c8c;
+  border-radius: 0.6rem;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+.manga .mCap {
+  padding: 0 14rem;
+}
+.manga .mCap-titulo {
+  font-family: "Roboto Serif", serif;
+  font-size: 3rem;
+  text-align: center;
+  margin: 8rem 0;
+}
+.manga .mCap-cont-2 {
+  position: relative;
+  margin: 2rem 0;
+  padding: 2rem 4rem;
+  border-radius: 0.6rem;
+  box-shadow: 2px 4px 10px #bd0003;
+}
+.manga .mCap-cont-2-titulo {
+  font-family: "Roboto Serif", serif;
+  font-size: 1.8rem;
+  margin-bottom: 8rem;
+}
+.manga .mCap-cont-2-button {
+  cursor: pointer;
+  position: absolute;
+  top: 2rem;
+  right: 4rem;
+  transform: rotate(270deg);
+  background-color: #fff;
+}
+.manga .mCap-cont-2-button-img {
+  width: 2.5rem;
+  pointer-events: none;
+}
+
 .footer {
   background-color: #000;
   margin-top: 20rem;
@@ -800,7 +907,7 @@
   color: #fff;
 }
 
-* {
+*, *::before, *::after {
   box-sizing: border-box;
   border: none;
   outline: none;

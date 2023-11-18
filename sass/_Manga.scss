@@ -1,0 +1,129 @@
+@use "Variables";
+@use "Mixin";
+
+.manga{
+
+  .mHero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    @include Mixin.crear-flex(start,end);
+  
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../images/manga2.webp");
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  
+    &-cont{
+      width: 100%;
+      background-color: Variables.$color-negro-opacity;
+      padding: Variables.$padding1;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+  
+      &-titulo{
+          font-family: Variables.$font1;
+          font-size: Variables.$font-size7;
+          color: Variables.$color-blanco;
+          text-align: center
+      }
+  
+    }
+  }
+
+  .mBody{
+    @include Mixin.crear-grid(30% 60%,1fr);
+    padding: Variables.$padding1;
+    padding-top: 4rem;
+
+    &-cont1{
+      &-text1{
+        background-color: Variables.$color-azul-oscuro;
+        padding: 1.5rem;
+        font-size: Variables.$font-size15;
+        font-family: Variables.$font2;
+        text-align: center;
+        border-radius: .6rem;
+        color: Variables.$color-blanco;
+        margin-bottom: 2rem;
+      }
+
+      &-img{
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+
+    &-cont2{
+      margin-left: 4rem;
+      font-family: Variables.$font2;
+      font-size: Variables.$font-size15;
+
+      &-text2{
+        margin-top: 2rem;
+
+        &-circulo{
+          background-color: Variables.$color-verde;
+          border-radius: 50%;
+          color: Variables.$color-verde;
+        }
+
+        &-genero{
+          padding: 1rem 2rem;
+          background-color: Variables.$color-gris;
+          border-radius: .6rem;
+          font-size: Variables.$font-size16;
+          margin: 1rem;
+        }
+
+      }
+    }
+  }
+
+  .mCap{
+    padding: Variables.$padding1;
+    &-titulo{
+      font-family: Variables.$font2;
+      font-size: Variables.$font-size10;
+      text-align: center;
+      margin: 8rem 0;
+    }
+
+    &-cont{
+      
+      &-2{
+        position: relative;
+        margin: 2rem 0;
+        padding: 2rem 4rem;
+        border-radius: .6rem;
+        box-shadow: 2px 4px 10px Variables.$color-rojo-oscuro;
+
+        &-titulo{
+          font-family: Variables.$font2;
+          font-size: Variables.$font-size15;
+          margin-bottom: 8rem;
+        }
+
+        &-button{
+          cursor: pointer;
+          position: absolute;
+          top: 2rem;
+          right: 4rem;
+          transform: rotate(270deg);
+          background-color: Variables.$color-blanco;
+          &-img{
+            width: 2.5rem;
+            pointer-events: none;
+          }
+        }
+      }
+    }
+  }
+}
