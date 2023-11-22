@@ -859,10 +859,16 @@
 }
 .manga .mCap-cont-2 {
   position: relative;
+  overflow-y: hidden;
+  height: 6rem;
   margin: 2rem 0;
   padding: 2rem 4rem;
   border-radius: 0.6rem;
   box-shadow: 2px 4px 10px #bd0003;
+  transition: height 1s ease-out;
+}
+.manga .mCap-cont-2-show {
+  height: 17rem;
 }
 .manga .mCap-cont-2-titulo {
   font-family: "Roboto Serif", serif;
@@ -872,14 +878,46 @@
 .manga .mCap-cont-2-button {
   cursor: pointer;
   position: absolute;
-  top: 2rem;
+  top: 1.5rem;
   right: 4rem;
-  transform: rotate(270deg);
+  transform: rotate(-90deg);
   background-color: #fff;
+  transition: transform 1s ease-out;
+}
+.manga .mCap-cont-2-button-show {
+  transform: rotate(90deg);
 }
 .manga .mCap-cont-2-button-img {
   width: 2.5rem;
   pointer-events: none;
+}
+.manga .mCap-cont-2-link {
+  font-size: 1.8rem;
+  font-family: "Roboto Serif", serif;
+  background-color: #bd0003;
+  padding: 1rem 2rem;
+  border-radius: 0.6rem;
+  color: #fff;
+  transition: background-color 0.2s ease-in;
+}
+.manga .mCap-cont-2-link:hover {
+  background-color: #ff0000;
+}
+.manga .mRec {
+  padding: 0 14rem;
+}
+.manga .mRec-titulo {
+  font-size: 1.8rem;
+  font-family: "Roboto Serif", serif;
+  margin-top: 10rem;
+}
+.manga .mRec-text, .manga .mRec-link {
+  font-size: 1.8rem;
+  font-family: "Roboto Serif", serif;
+  margin: 2rem 0;
+}
+.manga .mRec-link {
+  color: #1465bb;
 }
 
 .footer {

@@ -100,10 +100,17 @@
       
       &-2{
         position: relative;
+        overflow-y: hidden;
+        height: 6rem;
         margin: 2rem 0;
         padding: 2rem 4rem;
         border-radius: .6rem;
         box-shadow: 2px 4px 10px Variables.$color-rojo-oscuro;
+        transition: height 1s ease-out;
+
+        &-show{
+          height: 17rem;
+        }
 
         &-titulo{
           font-family: Variables.$font2;
@@ -114,16 +121,55 @@
         &-button{
           cursor: pointer;
           position: absolute;
-          top: 2rem;
+          top: 1.5rem;
           right: 4rem;
-          transform: rotate(270deg);
+          transform: rotate(-90deg);
           background-color: Variables.$color-blanco;
+          transition: transform 1s ease-out;
+
+          &-show{
+            transform: rotate(90deg);
+          }
           &-img{
             width: 2.5rem;
             pointer-events: none;
           }
         }
+
+        &-link{
+          font-size: Variables.$font-size15;
+          font-family: Variables.$font2;
+          background-color: Variables.$color-rojo-oscuro;
+          padding: 1rem 2rem;
+          border-radius: .6rem;
+          color: Variables.$color-blanco;
+          transition: background-color .2s ease-in;
+
+          &:hover{
+            background-color: Variables.$color-rojo;
+          }
+        }
       }
+    }
+  }
+
+  .mRec{
+    padding: Variables.$padding1;
+
+    &-titulo{
+      font-size: Variables.$font-size15;
+      font-family: Variables.$font2;
+      margin-top: 10rem;
+    }
+
+    &-text,&-link{
+      font-size: Variables.$font-size15;
+      font-family: Variables.$font2;
+      margin: 2rem 0;
+    }
+
+    &-link{
+      color: Variables.$color-azul-oscuro;
     }
   }
 }
