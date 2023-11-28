@@ -11,7 +11,9 @@
 @use "Manga";
 @use "Footer";
 
-*, *::before, *::after{
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   border: none;
   outline: none;
@@ -277,6 +279,42 @@ html {
       }
     }
   }
+
+  .manga {
+    .mHero {
+      &-cont {
+        padding: Variables.$padding2;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+    }
+    .mBody {
+      grid-template-columns: 40% 50%;
+      grid-template-rows: 1fr;
+      padding: Variables.$padding2;
+      padding-top: 4rem;
+    }
+
+    .mCap {
+      padding: Variables.$padding2;
+      &-cont {
+        &-2 {
+          height: 8rem;
+
+          &-show {
+            height: 20rem;
+          }
+
+          &-titulo {
+            width: 90%;
+          }
+        }
+      }
+    }
+    .mRec {
+      padding: Variables.$padding2;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -398,6 +436,26 @@ html {
       &-carrusel {
         height: 35rem;
       }
+    }
+  }
+  .manga {
+    .mHero {
+      &-cont {
+        padding: Variables.$padding3;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+    }
+    .mBody {
+      padding: Variables.$padding3;
+      padding-top: 4rem;
+    }
+
+    .mCap {
+      padding: Variables.$padding3;
+    }
+    .mRec {
+      padding: Variables.$padding3;
     }
   }
 }
@@ -588,6 +646,54 @@ html {
       }
     }
   }
+  .manga {
+    .mHero {
+      &-cont {
+        padding: Variables.$padding5;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        &-titulo {
+          font-size: Variables.$font-size8;
+        }
+      }
+    }
+    .mBody {
+      padding: Variables.$padding5;
+      padding-top: 4rem;
+      @include Mixin.crear-flex(center, center);
+      flex-direction: column;
+      width: 100%;
+
+      &-cont1 {
+        margin-bottom: 2rem;
+      }
+
+      &-cont2 {
+        margin-left: 0;
+      }
+    }
+
+    .mCap {
+      padding: Variables.$padding5;
+      &-cont {
+        &-2 {
+          height: 8rem;
+
+          &-show {
+            height: 20rem;
+          }
+
+          &-titulo {
+            width: 90%;
+          }
+        }
+      }
+    }
+
+    .mRec {
+      padding: Variables.$padding5;
+    }
+  }
 }
 
 @media (max-width: 480px) {
@@ -718,6 +824,30 @@ html {
       }
     }
   }
+  .manga {
+    .mHero {
+      &-cont {
+        padding: Variables.$padding6;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        &-titulo {
+          font-size: Variables.$font-size9;
+        }
+      }
+    }
+    .mBody {
+      padding: Variables.$padding6;
+      padding-top: 4rem;
+    }
+
+    .mCap {
+      padding: Variables.$padding6;
+    }
+
+    .mRec {
+      padding: Variables.$padding6;
+    }
+  }
 }
 
 @media (max-width: 320px) {
@@ -846,6 +976,49 @@ html {
           }
         }
       }
+    }
+  }
+  .manga {
+    .mHero {
+      &-cont {
+        padding: Variables.$padding7;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        &-titulo {
+          font-size: Variables.$font-size11;
+        }
+      }
+    }
+    .mBody {
+      padding: Variables.$padding7;
+      padding-top: 4rem;
+    }
+
+    .mCap {
+      padding: Variables.$padding7;
+
+      &-cont {
+        &-2 {
+          padding: 2rem 1.5rem;
+          height: 10rem;
+
+          &-show {
+            height: 22rem;
+          }
+
+          &-titulo {
+            width: 85%;
+          }
+
+          &-button {
+            right: 1.5rem;
+          }
+        }
+      }
+    }
+
+    .mRec {
+      padding: Variables.$padding7;
     }
   }
 }
