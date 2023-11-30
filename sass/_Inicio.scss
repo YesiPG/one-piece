@@ -69,11 +69,17 @@
         }
   
         &-link {
-          padding: 1rem;
+          padding: 1rem 2rem;
           color: Variables.$color-blanco;
           font-size: Variables.$font-size14;
           text-align: center;
           background-color: Variables.$color-negro-opacity;
+          border-radius: .6rem;
+          transition: background-color;
+
+          &:hover{
+            background-color: Variables.$color-negro;
+          }
         }
       }
   

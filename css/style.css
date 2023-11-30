@@ -141,11 +141,16 @@
   z-index: -1;
 }
 .present-cont1-button-link, .present-cont1-button2-link, .present-cont1-button3-link {
-  padding: 1rem;
+  padding: 1rem 2rem;
   color: #fff;
   font-size: 2rem;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 0.6rem;
+  transition: background-color;
+}
+.present-cont1-button-link:hover, .present-cont1-button2-link:hover, .present-cont1-button3-link:hover {
+  background-color: #000;
 }
 .present-cont1-button2::before {
   background-image: url("../images/anime.jpg");
@@ -996,6 +1001,42 @@
   background-color: #8c8c8c;
   font-size: 1.5rem;
 }
+.anime .cap-titulo {
+  font-family: "Roboto Serif", serif;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.anime .cap-cont {
+  padding-top: 8rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.anime .cap-cont-link {
+  position: relative;
+  margin: 1.5rem 0;
+}
+.anime .cap-cont-link-img {
+  max-width: 100%;
+  width: 30rem;
+  height: 20rem;
+  filter: grayscale(0.2);
+  transition: filter 0.5s ease;
+  object-fit: cover;
+}
+.anime .cap-cont-link-img:hover {
+  filter: grayscale(0.6);
+}
+.anime .cap-cont-link-text {
+  position: absolute;
+  top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 0.6rem;
+}
 
 .footer {
   background-color: #000;
@@ -1074,6 +1115,18 @@ html {
   .nak-cont3-carrusel-escenas-video-v {
     width: 70rem;
     height: 40rem;
+  }
+  .anime .aHero-cont {
+    top: 40vh;
+  }
+  .anime .aBody-cont1 {
+    width: 35%;
+  }
+  .anime .aBody-cont1-images-em {
+    width: 100%;
+  }
+  .anime .aBody-cont2 {
+    width: 60%;
   }
 }
 @media (max-width: 834px) {
@@ -1246,6 +1299,26 @@ html {
   .manga .mRec {
     padding: 0 12rem;
   }
+  .anime .aHero-cont {
+    top: 40vh;
+    padding: 4.5rem 0;
+  }
+  .anime .aBody {
+    padding: 0 12rem;
+    padding-top: 4rem;
+  }
+  .anime .aBody-cont1 {
+    width: 40%;
+  }
+  .anime .aBody-cont1-images-em {
+    width: 100%;
+  }
+  .anime .aBody-cont2 {
+    width: 55%;
+  }
+  .anime .cap-cont-link-img {
+    width: 26rem;
+  }
 }
 @media (max-width: 768px) {
   .contH {
@@ -1357,6 +1430,17 @@ html {
   }
   .manga .mRec {
     padding: 0 10rem;
+  }
+  .anime .aHero-cont {
+    top: 35vh;
+    padding: 4rem 0;
+  }
+  .anime .aHero-cont-titulo {
+    font-size: 3.3rem;
+  }
+  .anime .aBody {
+    padding: 0 10rem;
+    padding-top: 4rem;
   }
 }
 @media (max-width: 576px) {
@@ -1541,6 +1625,42 @@ html {
   .manga .mRec {
     padding: 0 6rem;
   }
+  .anime .aHero-cont {
+    top: 28vh;
+    padding: 2rem 0;
+  }
+  .anime .aHero-cont-titulo {
+    font-size: 3rem;
+  }
+  .anime .aBody {
+    padding: 0 6rem;
+    padding-top: 4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .anime .aBody-cont1 {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .anime .aBody-cont1-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .anime .aBody-cont1-images-em {
+    width: 65%;
+  }
+  .anime .aBody-cont2 {
+    width: 100%;
+  }
+  .anime .cap-cont {
+    justify-content: center;
+  }
+  .anime .cap-cont-link-img {
+    width: 35rem;
+  }
 }
 @media (max-width: 480px) {
   .contH {
@@ -1652,6 +1772,43 @@ html {
   }
   .manga .mRec {
     padding: 0 4rem;
+  }
+  .anime .aHero-cont {
+    top: 22vh;
+    padding: 2rem 0;
+  }
+  .anime .aHero-cont-titulo {
+    font-size: 2.5rem;
+  }
+  .anime .aBody {
+    padding: 0 4rem;
+    padding-top: 4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .anime .aBody-cont1 {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .anime .aBody-cont1-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .anime .aBody-cont1-images-em {
+    width: 75%;
+  }
+  .anime .aBody-cont2 {
+    width: 100%;
+  }
+  .anime .cap-cont {
+    padding-top: 4rem;
+    justify-content: center;
+  }
+  .anime .cap-cont-link-img {
+    width: 35rem;
   }
 }
 @media (max-width: 320px) {
@@ -1774,6 +1931,17 @@ html {
   }
   .manga .mRec {
     padding: 0 2rem;
+  }
+  .anime .aHero-cont {
+    top: 17vh;
+    padding: 0.5rem 0;
+  }
+  .anime .aHero-cont-titulo {
+    font-size: 2.3rem;
+  }
+  .anime .aBody {
+    padding: 0 2rem;
+    padding-top: 4rem;
   }
 }
 

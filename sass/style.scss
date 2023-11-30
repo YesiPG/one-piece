@@ -95,6 +95,29 @@ html {
       }
     }
   }
+
+  .anime{
+    .aHero{
+      &-cont{
+        top: 40vh;
+      }
+    }
+
+    .aBody{
+      &-cont1{
+        width: 35%;
+
+        &-images{
+          &-em{
+            width: 100%;
+          }
+        }
+      }
+      &-cont2{
+        width: 60%;
+      }
+    }
+  }
 }
 
 @media (max-width: 834px) {
@@ -316,6 +339,43 @@ html {
       padding: Variables.$padding2;
     }
   }
+
+  .anime{
+    .aHero{
+      &-cont{
+        top: 40vh;
+        padding: 4.5rem 0;
+      }
+    }
+
+    .aBody{
+      padding: Variables.$padding2;
+      padding-top: 4rem;
+
+      &-cont1{
+        width: 40%;
+
+        &-images{
+          &-em{
+            width: 100%;
+          }
+        }
+      }
+      &-cont2{
+        width: 55%;
+      }
+    }
+
+    .cap{
+      &-cont{
+        &-link{
+          &-img{
+            width: 26rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -457,6 +517,23 @@ html {
     }
     .mRec {
       padding: Variables.$padding3;
+    }
+  }
+
+  .anime{
+    .aHero{
+      &-cont{
+        top: 35vh;
+        padding: 4rem 0;
+
+        &-titulo{
+          font-size: Variables.$font-size9;
+        }
+      }
+    }
+    .aBody{
+      padding: Variables.$padding3;
+      padding-top: 4rem;
     }
   }
 }
@@ -695,6 +772,56 @@ html {
       padding: Variables.$padding5;
     }
   }
+
+  .anime{
+    .aHero{
+      &-cont{
+        top: 28vh;
+        padding: 2rem 0;
+
+        &-titulo{
+          font-size: Variables.$font-size10;
+        }
+      }
+    }
+
+    .aBody{
+      padding: Variables.$padding5;
+      padding-top: 4rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &-cont1{
+        width: 100%;
+        margin-bottom: 4rem;
+
+        &-images{
+        @include Mixin.crear-flex(center,center);
+        flex-direction: column;
+          
+          &-em{
+            width: 65%;
+          }
+        }
+      }
+      &-cont2{
+        width: 100%;
+      }
+    }
+
+    .cap{
+      &-cont{
+        justify-content: center;
+        &-link{
+          &-img{
+            width: 35rem;
+            // height: 30rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 480px) {
@@ -847,6 +974,57 @@ html {
 
     .mRec {
       padding: Variables.$padding6;
+    }
+  }
+
+  .anime{
+    .aHero{
+      &-cont{
+        top: 22vh;
+        padding: 2rem 0;
+
+        &-titulo{
+          font-size: Variables.$font-size12;
+        }
+      }
+    }
+
+    .aBody{
+      padding: Variables.$padding6;
+      padding-top: 4rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &-cont1{
+        width: 100%;
+        margin-bottom: 4rem;
+
+        &-images{
+        @include Mixin.crear-flex(center,center);
+        flex-direction: column;
+          
+          &-em{
+            width: 75%;
+          }
+        }
+      }
+      &-cont2{
+        width: 100%;
+      }
+    }
+
+    .cap{
+      &-cont{
+        padding-top: 4rem;
+        justify-content: center;
+        &-link{
+          &-img{
+            width: 35rem;
+            // height: 30rem;
+          }
+        }
+      }
     }
   }
 }
@@ -1020,6 +1198,25 @@ html {
 
     .mRec {
       padding: Variables.$padding7;
+    }
+  }
+
+  .anime{
+    .aHero{
+      &-cont{
+        top: 17vh;
+        padding: .5rem 0;
+
+
+        &-titulo{
+          font-size: Variables.$font-size13;
+        }
+      }
+    }
+
+    .aBody{
+      padding: Variables.$padding7;
+      padding-top: 4rem;
     }
   }
 }
