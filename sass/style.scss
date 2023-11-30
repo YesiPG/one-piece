@@ -10,6 +10,7 @@
 @use "Nakama";
 @use "Manga";
 @use "Anime";
+@use "Live";
 @use "Footer";
 
 *,
@@ -99,7 +100,7 @@ html {
   .anime{
     .aHero{
       &-cont{
-        top: 40vh;
+        top: 32vh;
       }
     }
 
@@ -343,7 +344,7 @@ html {
   .anime{
     .aHero{
       &-cont{
-        top: 40vh;
+        top: 34vh;
         padding: 4.5rem 0;
       }
     }
