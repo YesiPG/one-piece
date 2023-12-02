@@ -1,45 +1,85 @@
 @use "Mixin";
 @use "Variables";
 
-.live{
-    .arg{
-        padding: Variables.$padding1;
-        padding-top: 6rem;
-        @include Mixin.crear-flex(space-between,start);
+.live {
+  .arg {
+    padding: Variables.$padding1;
+    padding-top: 6rem;
+    @include Mixin.crear-flex(space-between, start);
 
-        &-cont1{
-            width: 30%;
-            &-text1{
-                font-size: Variables.$font-size15;
-                font-family: Variables.$font2;
-                text-align: center;
-                background-color: Variables.$color-rojo-oscuro;
-                margin-bottom: 1rem;
-                padding: 1rem;
-                border-radius: .6rem;
-                color: Variables.$color-blanco;
-            }
-            &-img{
-                max-width: 100%;
-                width: 45rem;
-                height: 40rem;
-                object-fit: cover;
-                margin-bottom: 2rem;
-            }
+    &-cont1 {
+      width: 30%;
+      &-text1 {
+        font-size: Variables.$font-size15;
+        font-family: Variables.$font2;
+        text-align: center;
+        background-color: Variables.$color-rojo-oscuro;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        border-radius: 0.6rem;
+        color: Variables.$color-blanco;
+      }
+      &-img {
+        max-width: 100%;
+        width: 45rem;
+        height: 40rem;
+        object-fit: cover;
+        margin-bottom: 2rem;
+      }
 
-            &-text2{
-                font-size: Variables.$font-size16;
-                font-family: Variables.$font2;
-            }
-        }
-
-        &-cont2{
-            width: 65%;
-
-            &-text{
-                font-size: Variables.$font-size15;
-                font-family: Variables.$font2;
-            }
-        }
+      &-text2 {
+        font-size: Variables.$font-size16;
+        font-family: Variables.$font2;
+      }
     }
+
+    &-cont2 {
+      width: 65%;
+
+      &-text {
+        font-size: Variables.$font-size15;
+        font-family: Variables.$font2;
+      }
+    }
+  }
+
+  .rep {
+    &-titulo {
+      font-size: Variables.$font-size12;
+      text-align: center;
+      font-family: Variables.$font2;
+      margin: 10rem 0 6rem;
+    }
+
+    &-cont {
+      &-1 {
+        margin-bottom: 3rem;
+        padding: Variables.$padding1;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        background-color: Variables.$color-negro;
+        &-titulo {
+          font-size: Variables.$font-size15;
+          font-family: Variables.$font2;
+          margin-bottom: 4rem;
+          color: Variables.$color-blanco;
+        }
+
+        &-info {
+          @include Mixin.crear-flex(space-between, start);
+          &-img {
+            max-width: 100%;
+            width: 20rem;
+            object-fit: cover;
+          }
+          &-text {
+            width: 75%;
+            color: Variables.$color-blanco;
+            font-size: Variables.$font-size15;
+            font-family: Variables.$font2;
+          }
+        }
+      }
+    }
+  }
 }

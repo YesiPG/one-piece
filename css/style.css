@@ -866,7 +866,7 @@
 .manga .mCap-cont-2 {
   position: relative;
   overflow-y: hidden;
-  height: 6rem;
+  height: 7rem;
   margin: 2rem 0;
   padding: 2rem 4rem;
   border-radius: 0.6rem;
@@ -887,7 +887,9 @@
   top: 1.5rem;
   right: 4rem;
   transform: rotate(-90deg);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #fff;
+  border-radius: 60%;
+  padding: 0.5rem;
   transition: transform 1s ease-out;
 }
 .manga .mCap-cont-2-button-show {
@@ -1076,6 +1078,41 @@
   font-size: 1.8rem;
   font-family: "Roboto Serif", serif;
 }
+.live .rep-titulo {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: "Roboto Serif", serif;
+  margin: 10rem 0 6rem;
+}
+.live .rep-cont-1 {
+  margin-bottom: 3rem;
+  padding: 0 14rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #000;
+}
+.live .rep-cont-1-titulo {
+  font-size: 1.8rem;
+  font-family: "Roboto Serif", serif;
+  margin-bottom: 4rem;
+  color: #fff;
+}
+.live .rep-cont-1-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.live .rep-cont-1-info-img {
+  max-width: 100%;
+  width: 20rem;
+  object-fit: cover;
+}
+.live .rep-cont-1-info-text {
+  width: 75%;
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: "Roboto Serif", serif;
+}
 
 .footer {
   background-color: #000;
@@ -1166,6 +1203,9 @@ html {
   }
   .anime .aBody-cont2 {
     width: 60%;
+  }
+  .live .rep-cont-1-info-text {
+    width: 68%;
   }
 }
 @media (max-width: 834px) {
@@ -1358,6 +1398,24 @@ html {
   .anime .cap-cont-link-img {
     width: 26rem;
   }
+  .live .arg {
+    padding: 0 12rem;
+    padding-top: 6rem;
+  }
+  .live .arg-cont1 {
+    width: 45%;
+  }
+  .live .arg-cont2 {
+    width: 50%;
+  }
+  .live .rep-cont-1 {
+    padding: 0 12rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .live .rep-cont-1-info-text {
+    width: 60%;
+  }
 }
 @media (max-width: 768px) {
   .contH {
@@ -1480,6 +1538,24 @@ html {
   .anime .aBody {
     padding: 0 10rem;
     padding-top: 4rem;
+  }
+  .live .arg {
+    padding: 0 10rem;
+    padding-top: 6rem;
+  }
+  .live .arg-cont1 {
+    width: 45%;
+  }
+  .live .arg-cont2 {
+    width: 50%;
+  }
+  .live .rep-cont-1 {
+    padding: 0 10rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .live .rep-cont-1-info-text {
+    width: 60%;
   }
 }
 @media (max-width: 576px) {
@@ -1700,6 +1776,38 @@ html {
   .anime .cap-cont-link-img {
     width: 35rem;
   }
+  .live .arg {
+    padding: 0 6rem;
+    padding-top: 6rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .live .arg-cont1 {
+    width: 70%;
+    margin-bottom: 4rem;
+  }
+  .live .arg-cont2 {
+    width: 100%;
+  }
+  .live .rep-titulo {
+    font-size: 2.3rem;
+  }
+  .live .rep-cont-1 {
+    padding: 0 6rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .live .rep-cont-1-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .live .rep-cont-1-info-img {
+    margin-bottom: 2rem;
+  }
+  .live .rep-cont-1-info-text {
+    width: 100%;
+  }
 }
 @media (max-width: 480px) {
   .contH {
@@ -1849,6 +1957,18 @@ html {
   .anime .cap-cont-link-img {
     width: 35rem;
   }
+  .live .arg {
+    padding: 0 4rem;
+    padding-top: 6rem;
+  }
+  .live .arg-cont1 {
+    width: 80%;
+  }
+  .live .rep-cont-1 {
+    padding: 0 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 }
 @media (max-width: 320px) {
   .contH {
@@ -1981,6 +2101,18 @@ html {
   .anime .aBody {
     padding: 0 2rem;
     padding-top: 4rem;
+  }
+  .live .arg {
+    padding: 0 2rem;
+    padding-top: 6rem;
+  }
+  .live .arg-cont1 {
+    width: 100%;
+  }
+  .live .rep-cont-1 {
+    padding: 0 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }
 

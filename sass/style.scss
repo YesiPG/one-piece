@@ -97,25 +97,39 @@ html {
     }
   }
 
-  .anime{
-    .aHero{
-      &-cont{
+  .anime {
+    .aHero {
+      &-cont {
         top: 32vh;
       }
     }
 
-    .aBody{
-      &-cont1{
+    .aBody {
+      &-cont1 {
         width: 35%;
 
-        &-images{
-          &-em{
+        &-images {
+          &-em {
             width: 100%;
           }
         }
       }
-      &-cont2{
+      &-cont2 {
         width: 60%;
+      }
+    }
+  }
+
+  .live {
+    .rep {
+      &-cont {
+        &-1 {
+          &-info {
+            &-text {
+              width: 68%;
+            }
+          }
+        }
       }
     }
   }
@@ -341,37 +355,64 @@ html {
     }
   }
 
-  .anime{
-    .aHero{
-      &-cont{
+  .anime {
+    .aHero {
+      &-cont {
         top: 34vh;
         padding: 4.5rem 0;
       }
     }
 
-    .aBody{
+    .aBody {
       padding: Variables.$padding2;
       padding-top: 4rem;
 
-      &-cont1{
+      &-cont1 {
         width: 40%;
 
-        &-images{
-          &-em{
+        &-images {
+          &-em {
             width: 100%;
           }
         }
       }
-      &-cont2{
+      &-cont2 {
         width: 55%;
       }
     }
 
-    .cap{
-      &-cont{
-        &-link{
-          &-img{
+    .cap {
+      &-cont {
+        &-link {
+          &-img {
             width: 26rem;
+          }
+        }
+      }
+    }
+  }
+
+  .live {
+    .arg {
+      padding: Variables.$padding2;
+      padding-top: 6rem;
+      &-cont1 {
+        width: 45%;
+      }
+      &-cont2 {
+        width: 50%;
+      }
+    }
+    .rep {
+      &-cont {
+        &-1 {
+          padding: Variables.$padding2;
+          padding-top: 4rem;
+          padding-bottom: 4rem;
+          &-info {
+            &-text {
+              width: 60%;
+            }
           }
         }
       }
@@ -521,20 +562,47 @@ html {
     }
   }
 
-  .anime{
-    .aHero{
-      &-cont{
+  .anime {
+    .aHero {
+      &-cont {
         top: 35vh;
         padding: 4rem 0;
 
-        &-titulo{
+        &-titulo {
           font-size: Variables.$font-size9;
         }
       }
     }
-    .aBody{
+    .aBody {
       padding: Variables.$padding3;
       padding-top: 4rem;
+    }
+  }
+
+  .live {
+    .arg {
+      padding: Variables.$padding3;
+      padding-top: 6rem;
+      &-cont1 {
+        width: 45%;
+      }
+      &-cont2 {
+        width: 50%;
+      }
+    }
+    .rep {
+      &-cont {
+        &-1 {
+          padding: Variables.$padding3;
+          padding-top: 4rem;
+          padding-bottom: 4rem;
+          &-info {
+            &-text {
+              width: 60%;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -774,50 +842,90 @@ html {
     }
   }
 
-  .anime{
-    .aHero{
-      &-cont{
+  .anime {
+    .aHero {
+      &-cont {
         top: 28vh;
         padding: 2rem 0;
 
-        &-titulo{
+        &-titulo {
           font-size: Variables.$font-size10;
         }
       }
     }
 
-    .aBody{
+    .aBody {
       padding: Variables.$padding5;
       padding-top: 4rem;
       flex-direction: column;
       justify-content: center;
       align-items: center;
 
-      &-cont1{
+      &-cont1 {
         width: 100%;
         margin-bottom: 4rem;
 
-        &-images{
-        @include Mixin.crear-flex(center,center);
-        flex-direction: column;
-          
-          &-em{
+        &-images {
+          @include Mixin.crear-flex(center, center);
+          flex-direction: column;
+
+          &-em {
             width: 65%;
           }
         }
       }
-      &-cont2{
+      &-cont2 {
         width: 100%;
       }
     }
 
-    .cap{
-      &-cont{
+    .cap {
+      &-cont {
         justify-content: center;
-        &-link{
-          &-img{
+        &-link {
+          &-img {
             width: 35rem;
             // height: 30rem;
+          }
+        }
+      }
+    }
+  }
+
+  .live {
+    .arg {
+      padding: Variables.$padding5;
+      padding-top: 6rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &-cont1 {
+        width: 70%;
+        margin-bottom: 4rem;
+      }
+      &-cont2 {
+        width: 100%;
+      }
+    }
+    .rep {
+      &-titulo {
+      font-size: Variables.$font-size13;
+
+      }
+      &-cont {
+        &-1 {
+          padding: Variables.$padding5;
+          padding-top: 4rem;
+          padding-bottom: 4rem;
+          &-info {
+            flex-direction: column;
+            align-items: center;
+            &-img {
+              margin-bottom: 2rem;
+            }
+            &-text {
+              width: 100%;
+            }
           }
         }
       }
@@ -978,52 +1086,70 @@ html {
     }
   }
 
-  .anime{
-    .aHero{
-      &-cont{
+  .anime {
+    .aHero {
+      &-cont {
         top: 22vh;
         padding: 2rem 0;
 
-        &-titulo{
+        &-titulo {
           font-size: Variables.$font-size12;
         }
       }
     }
 
-    .aBody{
+    .aBody {
       padding: Variables.$padding6;
       padding-top: 4rem;
       flex-direction: column;
       justify-content: center;
       align-items: center;
 
-      &-cont1{
+      &-cont1 {
         width: 100%;
         margin-bottom: 4rem;
 
-        &-images{
-        @include Mixin.crear-flex(center,center);
-        flex-direction: column;
-          
-          &-em{
+        &-images {
+          @include Mixin.crear-flex(center, center);
+          flex-direction: column;
+
+          &-em {
             width: 75%;
           }
         }
       }
-      &-cont2{
+      &-cont2 {
         width: 100%;
       }
     }
 
-    .cap{
-      &-cont{
+    .cap {
+      &-cont {
         padding-top: 4rem;
         justify-content: center;
-        &-link{
-          &-img{
+        &-link {
+          &-img {
             width: 35rem;
             // height: 30rem;
           }
+        }
+      }
+    }
+  }
+  .live {
+    .arg {
+      padding: Variables.$padding6;
+      padding-top: 6rem;
+      &-cont1 {
+        width: 80%;
+      }
+    }
+    .rep {
+      &-cont {
+        &-1 {
+          padding: Variables.$padding6;
+          padding-top: 4rem;
+          padding-bottom: 4rem;
         }
       }
     }
@@ -1202,22 +1328,39 @@ html {
     }
   }
 
-  .anime{
-    .aHero{
-      &-cont{
+  .anime {
+    .aHero {
+      &-cont {
         top: 17vh;
-        padding: .5rem 0;
+        padding: 0.5rem 0;
 
-
-        &-titulo{
+        &-titulo {
           font-size: Variables.$font-size13;
         }
       }
     }
 
-    .aBody{
+    .aBody {
       padding: Variables.$padding7;
       padding-top: 4rem;
+    }
+  }
+  .live {
+    .arg {
+      padding: Variables.$padding7;
+      padding-top: 6rem;
+      &-cont1 {
+        width: 100%;
+      }
+    }
+    .rep {
+      &-cont {
+        &-1 {
+          padding: Variables.$padding7;
+          padding-top: 4rem;
+          padding-bottom: 4rem;
+        }
+      }
     }
   }
 }
